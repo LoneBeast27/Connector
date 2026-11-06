@@ -1,8 +1,11 @@
-name: Integration (FFAPI + Launchpad + Connector + server smoke test)
+name: Integration (FFAPI + Launchpad + Connector + mixin audit + server smoke test)
 
-# Fork-only pipeline for the 26.3 port. Builds the three projects from the LoneBeast27 forks,
-# boots a NeoForge dedicated server with Connector and a set of Fabric mods, and publishes
-# logs + jars to the ci/<branch> git branch so results can be read with a plain `git fetch`.
+# Fork-only pipeline for the 26.3 port, built to surface EVERY problem per run (see CLAUDE.md):
+#  - FFAPI / Launchpad are rebuilt only when their commit changes (actions/cache keyed on SHAs)
+#  - a static mixin audit checks all mixins of all three projects against NeoForge-patched Minecraft
+#  - a lenient server boot (-Dmixin.ignoreRequired) collects all runtime mixin/linkage failures at once
+#  - strict boots (Connector only, then + Fabric mods) gate the result
+# Results land on the ci/<branch> git branch so they can be read with a plain `git fetch`.
 
 on:
   push:
@@ -16,74 +19,75 @@ env:
   BRANCH: 26.3.x
   MC_VERSION: '26.3'
   NEOFORGE_VERSION: 26.3.0.100
+  ASM_VERSION: '9.8'
   # Fabric mods (Modrinth project slugs) loaded on the smoke-test server. Server-safe picks only.
   SMOKE_MODS: 'cloth-config fabric-language-kotlin appleskin jade ferrite-core lithium'
 
 jobs:
   integration:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 120
     steps:
       - name: Checkout Connector
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          fetch-tags: true
-          path: connector
+        with: { fetch-depth: 0, fetch-tags: true, path: connector }
 
       - name: Checkout Forgified Fabric API
         uses: actions/checkout@v4
-        with:
-          repository: LoneBeast27/ForgifiedFabricAPI
-          ref: ${{ env.BRANCH }}
-          fetch-depth: 0
-          path: ffapi
+        with: { repository: LoneBeast27/ForgifiedFabricAPI, ref: '${{ env.BRANCH }}', fetch-depth: 0, path: ffapi }
 
       - name: Checkout Launchpad
         uses: actions/checkout@v4
-        with:
-          repository: LoneBeast27/Launchpad
-          ref: ${{ env.BRANCH }}
-          fetch-depth: 0
-          path: launchpad
+        with: { repository: LoneBeast27/Launchpad, ref: '${{ env.BRANCH }}', fetch-depth: 0, path: launchpad }
 
       - name: Setup JDK 25
         uses: actions/setup-java@v4
-        with:
-          distribution: 'microsoft'
-          java-version: '25'
+        with: { distribution: 'microsoft', java-version: '25' }
 
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          # Non-default branch: allow writing the Gradle/NFRT cache so MC isn't re-decompiled every run.
+          cache-read-only: false
 
-      - name: Prepare report dir
-        run: mkdir -p "$RUNNER_TEMP/report/logs" "$RUNNER_TEMP/report/jars" && echo "REPORT=$RUNNER_TEMP/report" >> $GITHUB_ENV
-
-      - name: Apply staged FFAPI patches (test-only, pending upstreaming to the FFAPI fork)
+      - name: Prepare report dir + SHAs
         shell: bash
         run: |
-          : > "$REPORT/logs/ffapi-patches.txt"
-          for p in connector/.github/ffapi-patches/*.patch; do
-            [ -e "$p" ] || continue
-            if git -C ffapi apply --check "$GITHUB_WORKSPACE/$p" 2>/dev/null; then
-              git -C ffapi apply "$GITHUB_WORKSPACE/$p" && echo "applied $(basename $p)" >> "$REPORT/logs/ffapi-patches.txt"
-            else
-              echo "skipped (already applied or conflicts) $(basename $p)" >> "$REPORT/logs/ffapi-patches.txt"
-            fi
-          done
-          cat "$REPORT/logs/ffapi-patches.txt"
+          mkdir -p "$RUNNER_TEMP/report/logs" "$RUNNER_TEMP/report/jars" && echo "REPORT=$RUNNER_TEMP/report" >> $GITHUB_ENV
+          echo "FFAPI_SHA=$(git -C ffapi rev-parse HEAD)" >> $GITHUB_ENV
+          echo "LAUNCHPAD_SHA=$(git -C launchpad rev-parse HEAD)" >> $GITHUB_ENV
+
+      - name: Restore FFAPI build (by FFAPI SHA)
+        id: ffapi-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.m2/repository/org/sinytra/forgified-fabric-api
+            ffapi/build/libs
+          key: ffapi-${{ env.FFAPI_SHA }}
 
       - name: Build FFAPI
         id: ffapi
+        if: steps.ffapi-cache.outputs.cache-hit != 'true'
         working-directory: ffapi
         shell: bash
         run: |
           set -o pipefail
           mkdir -p ~/.gradle/caches/fabric-loom/assets
-          ./gradlew publishToMavenLocal --stacktrace --continue -x test 2>&1 | tee "$REPORT/logs/ffapi-build.log"
+          ./gradlew publishToMavenLocal --stacktrace --continue --build-cache -x test 2>&1 | tee "$REPORT/logs/ffapi-build.log"
+
+      - name: Restore Launchpad build (by Launchpad + FFAPI SHA)
+        id: launchpad-cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.m2/repository/org/sinytra/launchpad
+            launchpad/build/libs
+          key: launchpad-${{ env.LAUNCHPAD_SHA }}-${{ env.FFAPI_SHA }}
 
       - name: Build Launchpad
         id: launchpad
+        if: steps.launchpad-cache.outputs.cache-hit != 'true'
         working-directory: launchpad
         shell: bash
         env:
@@ -91,7 +95,7 @@ jobs:
           PUBLISH_RELEASE_TYPE: BETA
         run: |
           set -o pipefail
-          ./gradlew publishToMavenLocal --stacktrace -x test 2>&1 | tee "$REPORT/logs/launchpad-build.log"
+          ./gradlew publishToMavenLocal --stacktrace --continue --build-cache -x test 2>&1 | tee "$REPORT/logs/launchpad-build.log"
 
       - name: Build Connector
         id: connector
@@ -99,7 +103,7 @@ jobs:
         shell: bash
         run: |
           set -o pipefail
-          ./gradlew build publishToMavenLocal --stacktrace -x test 2>&1 | tee "$REPORT/logs/connector-build.log"
+          ./gradlew build publishToMavenLocal --stacktrace --continue --build-cache -x test 2>&1 | tee "$REPORT/logs/connector-build.log"
 
       - name: Collect jars
         if: ${{ always() }}
@@ -122,13 +126,22 @@ jobs:
           echo "eula=true" > eula.txt
           printf 'online-mode=false\nlevel-type=minecraft\\:flat\nspawn-protection=0\nview-distance=4\nsimulation-distance=4\n' > server.properties
 
-      - name: Smoke test - Connector only
+      - name: Static mixin audit (all mixins, client + server)
         if: ${{ always() && env.JAR_COUNT == '3' }}
         shell: bash
         run: |
-          cd server && rm -rf mods world logs crash-reports && mkdir mods
-          cp "$REPORT"/jars/*.jar mods/
-          bash "$GITHUB_WORKSPACE/connector/.github/scripts/run-server.sh" "$REPORT/logs/server-baseline" || true
+          mkdir -p audit && cd audit
+          for a in asm asm-tree; do curl -fsSL -o $a.jar "https://repo1.maven.org/maven2/org/ow2/asm/$a/${ASM_VERSION}/$a-${ASM_VERSION}.jar"; done
+          # Target classpath, highest priority first: NeoForge-patched/merged Minecraft (client+server) from the
+          # ModDevGradle/NFRT outputs, then the server install, then the NeoForge jar and libraries.
+          {
+            find "$GITHUB_WORKSPACE"/connector/build "$GITHUB_WORKSPACE"/ffapi/build ~/.gradle/caches -name '*.jar' 2>/dev/null | grep -iE 'neoforge-26\.3[^/]*(merged|client)|minecraft[^/]*(patched|merged)|/moddev/artifacts/' | grep -viE 'sources|javadoc' | sort -u
+            find "$GITHUB_WORKSPACE"/server/libraries -name '*.jar' 2>/dev/null | grep -iE 'patched|neoforge' | sort -u
+            find "$GITHUB_WORKSPACE"/server/libraries -name '*.jar' 2>/dev/null | sort -u
+          } | awk '!seen[$0]++' > targets.txt
+          cp targets.txt "$REPORT/logs/mixin-audit-classpath.txt"
+          java -cp asm.jar:asm-tree.jar "$GITHUB_WORKSPACE/connector/.github/tools/MixinAudit.java" targets.txt "$REPORT/logs/mixin-audit.txt" "$REPORT"/jars/*.jar \
+            2>&1 | tee "$REPORT/logs/mixin-audit-run.log" || true
 
       - name: Download Fabric smoke-test mods
         if: ${{ always() && env.JAR_COUNT == '3' }}
@@ -143,7 +156,26 @@ jobs:
           done
           cat "$REPORT/logs/fabric-mods.txt"
 
-      - name: Smoke test - with Fabric mods
+      - name: Lenient boot - collect ALL runtime failures (Connector + Fabric mods, mixin.ignoreRequired)
+        if: ${{ always() && env.JAR_COUNT == '3' }}
+        shell: bash
+        run: |
+          cd server && rm -rf mods world logs crash-reports && mkdir mods
+          cp "$REPORT"/jars/*.jar mods/ && cp ../fabric-mods/*.jar mods/ 2>/dev/null || true
+          printf -- '-Dmixin.ignoreRequired=true\n-Dmixin.dumpTargetOnFailure=true\n-Dmixin.debug.verbose=false\n' > user_jvm_args.txt
+          bash "$GITHUB_WORKSPACE/connector/.github/scripts/run-server.sh" "$REPORT/logs/server-lenient" || true
+          rm -f user_jvm_args.txt
+          bash "$GITHUB_WORKSPACE/connector/.github/scripts/summarize-runtime.sh" "$REPORT/logs/server-lenient" > "$REPORT/logs/runtime-issues.txt" || true
+
+      - name: Strict boot - Connector only
+        if: ${{ always() && env.JAR_COUNT == '3' }}
+        shell: bash
+        run: |
+          cd server && rm -rf mods world logs crash-reports && mkdir mods
+          cp "$REPORT"/jars/*.jar mods/
+          bash "$GITHUB_WORKSPACE/connector/.github/scripts/run-server.sh" "$REPORT/logs/server-baseline" || true
+
+      - name: Strict boot - with Fabric mods
         if: ${{ always() && env.JAR_COUNT == '3' }}
         shell: bash
         run: |
@@ -156,13 +188,18 @@ jobs:
         shell: bash
         run: |
           cd "$REPORT"
-          for f in logs/*-build.log; do [ -f "$f" ] && grep -nE '^e: |error:|FAILED|BUILD (SUCCESSFUL|FAILED)|What went wrong|Could not' "$f" | head -300 > "${f%.log}.errors.txt"; done
+          for f in logs/*-build.log; do [ -f "$f" ] && grep -nE '^e: |error:|FAILED|BUILD (SUCCESSFUL|FAILED)|What went wrong|Could not' "$f" | head -400 > "${f%.log}.errors.txt"; done
           cat > STATUS <<EOT
           commit=${GITHUB_SHA}
           run=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
-          ffapi=${{ steps.ffapi.outcome }}
-          launchpad=${{ steps.launchpad.outcome }}
+          ffapi_sha=${FFAPI_SHA}
+          launchpad_sha=${LAUNCHPAD_SHA}
+          ffapi=${{ steps.ffapi.outcome }} (cache-hit=${{ steps.ffapi-cache.outputs.cache-hit }})
+          launchpad=${{ steps.launchpad.outcome }} (cache-hit=${{ steps.launchpad-cache.outputs.cache-hit }})
           connector=${{ steps.connector.outcome }}
+          mixin_audit=$(grep -oE 'ISSUES: [0-9]+' logs/mixin-audit.txt 2>/dev/null || echo not-run)
+          runtime_issues=$(grep -c . logs/runtime-issues.txt 2>/dev/null || echo not-run)
+          server_lenient=$(cat logs/server-lenient/RESULT 2>/dev/null || echo not-run)
           server_baseline=$(cat logs/server-baseline/RESULT 2>/dev/null || echo not-run)
           server_fabric=$(cat logs/server-fabric/RESULT 2>/dev/null || echo not-run)
           EOT
