@@ -59,6 +59,20 @@ jobs:
       - name: Prepare report dir
         run: mkdir -p "$RUNNER_TEMP/report/logs" "$RUNNER_TEMP/report/jars" && echo "REPORT=$RUNNER_TEMP/report" >> $GITHUB_ENV
 
+      - name: Apply staged FFAPI patches (test-only, pending upstreaming to the FFAPI fork)
+        shell: bash
+        run: |
+          : > "$REPORT/logs/ffapi-patches.txt"
+          for p in connector/.github/ffapi-patches/*.patch; do
+            [ -e "$p" ] || continue
+            if git -C ffapi apply --check "$GITHUB_WORKSPACE/$p" 2>/dev/null; then
+              git -C ffapi apply "$GITHUB_WORKSPACE/$p" && echo "applied $(basename $p)" >> "$REPORT/logs/ffapi-patches.txt"
+            else
+              echo "skipped (already applied or conflicts) $(basename $p)" >> "$REPORT/logs/ffapi-patches.txt"
+            fi
+          done
+          cat "$REPORT/logs/ffapi-patches.txt"
+
       - name: Build FFAPI
         id: ffapi
         working-directory: ffapi
