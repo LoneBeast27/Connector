@@ -21,6 +21,12 @@ public class MixinAudit {
     static final Map<String, Src> MODS = new HashMap<>();      // internal name -> class (mod jars)
     static final Map<String, ClassNode> NODE_CACHE = new HashMap<>();
     static final List<String[]> CONFIGS = new ArrayList<>();   // {origin, json}
+    static final List<String[]> WIDENERS = new ArrayList<>();  // {origin, text, kind}
+    // Fields NeoForge's coremod (ReplaceFieldWithGetterAccess) rewrites; they must stay private.
+    static final Set<String> NEO_GUARDED_FIELDS = Set.of(
+        "net/minecraft/world/level/biome/Biome.climateSettings", "net/minecraft/world/level/biome/Biome.specialEffects",
+        "net/minecraft/world/level/biome/Biome.attributes", "net/minecraft/world/level/levelgen/structure/Structure.settings",
+        "net/minecraft/world/level/block/FlowerPotBlock.potted");
     static final TreeMap<String, TreeSet<String>> ISSUES = new TreeMap<>();
     static int mixinCount, injectorCount, checkedAts;
     static final Map<String, Set<String>> ADDED_FIELDS = new HashMap<>();   // target -> field names added by any mixin
@@ -62,6 +68,7 @@ public class MixinAudit {
             head.append("  ").append(probe).append(" <- ").append(s == null ? "MISSING" : s.jar()).append('\n');
         }
 
+        for (String[] w : WIDENERS) auditWidener(w[0], w[1], w[2]);
         for (String[] cfg : CONFIGS) collectAdded(cfg[1]);
         for (String[] cfg : CONFIGS) auditConfig(cfg[0], cfg[1]);
 
@@ -99,6 +106,8 @@ public class MixinAudit {
             } else if (n.endsWith(".jar") && collectConfigs) {
                 byte[] nested = zip.readAllBytes();
                 indexStream(new ByteArrayInputStream(nested), jar + "!" + n, n.substring(n.lastIndexOf('/') + 1), into, true);
+            } else if (collectConfigs && (n.endsWith(".classtweaker") || n.endsWith(".accesswidener") || n.endsWith("accesstransformer.cfg"))) {
+                WIDENERS.add(new String[]{origin + ":" + n, new String(zip.readAllBytes()), n.endsWith(".cfg") ? "at" : "aw"});
             } else if (collectConfigs && n.endsWith(".json") && !n.contains("/")) {
                 String json = new String(zip.readAllBytes());
                 if (json.contains("\"package\"") && (json.contains("\"mixins\"") || json.contains("\"client\"") || json.contains("\"server\"")))
@@ -141,6 +150,45 @@ public class MixinAudit {
 
     static void issue(String kind, String msg) {
         ISSUES.computeIfAbsent(kind, k -> new TreeSet<>()).add(msg);
+    }
+
+    /** Checks classtweaker/access-widener ("accessible field owner name desc") and AT ("public a.b.C name") entries. */
+    static void auditWidener(String origin, String text, String kind) {
+        for (String raw : text.split("\\R")) {
+            String line = raw.replaceAll("#.*$", "").trim();
+            if (line.isEmpty()) continue;
+            String[] t = line.split("\\s+");
+            String owner, member = null, desc = null, what;
+            if (kind.equals("aw")) {
+                if (t.length < 3 || t[0].equals("classTweaker") || t[0].equals("accessWidener")) continue;
+                what = t[1];
+                owner = t[2];
+                if (what.equals("field") || what.equals("method")) { if (t.length < 5) continue; member = t[3]; desc = t[4]; }
+                else if (!what.equals("class")) continue;   // inject-interface etc.: owner checked below
+            } else {
+                if (t.length < 2) continue;
+                owner = t[1].replace('.', '/');
+                what = "class";
+                if (t.length >= 3) {
+                    String m = t[2];
+                    int p = m.indexOf('(');
+                    if (p >= 0) { what = "method"; member = m.substring(0, p); desc = m.substring(p); }
+                    else { what = "field"; member = m; }
+                }
+            }
+            if (owner.startsWith("net/fabricmc/") || owner.startsWith("org/sinytra/")) continue;
+            ClassNode c = node(owner);
+            String where = origin + " :: " + line;
+            if (c == null) { if (owner.startsWith("net/minecraft/") || owner.startsWith("com/mojang/")) issue("WIDENER_CLASS_MISSING", where); continue; }
+            if (member == null) continue;
+            if (what.equals("field")) {
+                if (findField(c, member, null) == null) issue("WIDENER_FIELD_MISSING", where + fieldCandidates(c, member));
+                else if (desc != null && findField(c, member, desc) == null) issue("WIDENER_FIELD_DESC_MISMATCH", where + " | actual: " + findField(c, member, null).desc);
+                if (NEO_GUARDED_FIELDS.contains(owner + "." + member)) issue("WIDENER_BREAKS_NEOFORGE_COREMOD", where + " (NeoForge requires this field to stay private)");
+            } else if (what.equals("method")) {
+                if (findMethod(c, member, desc, false) == null) issue("WIDENER_METHOD_MISSING", where + candidates(c, member));
+            }
+        }
     }
 
     static void collectAdded(String json) {
