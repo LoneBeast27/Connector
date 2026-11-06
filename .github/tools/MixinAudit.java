@@ -23,6 +23,8 @@ public class MixinAudit {
     static final List<String[]> CONFIGS = new ArrayList<>();   // {origin, json}
     static final TreeMap<String, TreeSet<String>> ISSUES = new TreeMap<>();
     static int mixinCount, injectorCount, checkedAts;
+    static final Map<String, Set<String>> ADDED_FIELDS = new HashMap<>();   // target -> field names added by any mixin
+    static final Map<String, Set<String>> ADDED_METHODS = new HashMap<>();  // target -> name+desc added by any mixin
 
     static final Set<String> INJECTORS = Set.of(
         "Lorg/spongepowered/asm/mixin/injection/Inject;",
@@ -60,6 +62,7 @@ public class MixinAudit {
             head.append("  ").append(probe).append(" <- ").append(s == null ? "MISSING" : s.jar()).append('\n');
         }
 
+        for (String[] cfg : CONFIGS) collectAdded(cfg[1]);
         for (String[] cfg : CONFIGS) auditConfig(cfg[0], cfg[1]);
 
         int total = ISSUES.values().stream().mapToInt(Set::size).sum();
@@ -138,6 +141,28 @@ public class MixinAudit {
 
     static void issue(String kind, String msg) {
         ISSUES.computeIfAbsent(kind, k -> new TreeSet<>()).add(msg);
+    }
+
+    static void collectAdded(String json) {
+        String pkg = jsonString(json, "package");
+        if (pkg == null) return;
+        for (String side : List.of("mixins", "client", "server")) {
+            for (String m : jsonArray(json, side)) {
+                ClassNode mixin = node((pkg + "." + m).replace('.', '/'));
+                if (mixin == null) continue;
+                AnnotationNode mixAnn = find(anns(mixin.visibleAnnotations, mixin.invisibleAnnotations), MIXIN);
+                if (mixAnn == null) continue;
+                List<String> targets = new ArrayList<>();
+                for (Object o : list(val(mixAnn, "value"))) targets.add(((Type) o).getInternalName());
+                for (Object o : list(val(mixAnn, "targets"))) targets.add(((String) o).replace('.', '/'));
+                for (String t : targets) {
+                    for (FieldNode f : mixin.fields)
+                        if (find(anns(f.visibleAnnotations, f.invisibleAnnotations), SHADOW) == null) ADDED_FIELDS.computeIfAbsent(t, k -> new HashSet<>()).add(f.name);
+                    for (MethodNode mm : mixin.methods)
+                        if (find(anns(mm.visibleAnnotations, mm.invisibleAnnotations), SHADOW) == null) ADDED_METHODS.computeIfAbsent(t, k -> new HashSet<>()).add(mm.name + mm.desc);
+                }
+            }
+        }
     }
 
     static void auditConfig(String origin, String json) {
@@ -229,7 +254,8 @@ public class MixinAudit {
                 Object prefix = val(shadow, "prefix");
                 String p = prefix == null ? "shadow$" : (String) prefix;
                 if (name.startsWith(p)) name = name.substring(p.length());
-                if (findMethod(target, name, m.desc, true) == null && !hasAlias(shadow, target, m.desc, true))
+                if (findMethod(target, name, m.desc, true) == null && !hasAlias(shadow, target, m.desc, true)
+                    && !ADDED_METHODS.getOrDefault(tn, Set.of()).contains(name + m.desc))
                     issue("SHADOW_METHOD_MISSING", sig + " :: @Shadow " + name + m.desc + candidates(target, name));
                 continue;
             }
@@ -264,7 +290,8 @@ public class MixinAudit {
             AnnotationNode shadow = find(fa, SHADOW);
             if (shadow == null) continue;
             String name = f.name;
-            if (findField(target, name, f.desc) == null && !hasAlias(shadow, target, f.desc, false))
+            if (findField(target, name, f.desc) == null && !hasAlias(shadow, target, null, false)
+                && !ADDED_FIELDS.getOrDefault(tn, Set.of()).contains(name))
                 issue("SHADOW_FIELD_MISSING", where + " -> " + tn + " :: @Shadow " + f.desc + " " + name + fieldCandidates(target, name));
         }
     }
@@ -344,6 +371,17 @@ public class MixinAudit {
     /** Resolves a mixin method selector: name, name(desc), Lowner;name(desc), name*, *, <init>. */
     static List<MethodNode> resolveSelector(ClassNode target, String sel) {
         String s = sel.trim();
+        if (s.startsWith("/")) {
+            Matcher rm = Pattern.compile("^/(.*?)/(?:\\s+desc=/(.*?)/)?\\s*$").matcher(s);
+            List<MethodNode> out = new ArrayList<>();
+            if (rm.find()) {
+                Pattern np = Pattern.compile(rm.group(1));
+                Pattern dp = rm.group(2) == null ? null : Pattern.compile(rm.group(2));
+                for (MethodNode tm : target.methods)
+                    if (np.matcher(tm.name).find() && (dp == null || dp.matcher(tm.desc).find())) out.add(tm);
+            }
+            return out;
+        }
         if (s.startsWith("L") && s.contains(";")) s = s.substring(s.indexOf(';') + 1);
         String name = s, desc = null;
         int p = s.indexOf('(');
@@ -368,6 +406,12 @@ public class MixinAudit {
         if (value.startsWith("MIXINEXTRAS:")) return;
         checkedAts++;
         String t = targetStr.trim();
+        // Normalise "pkg/Owner.name(desc)" / "pkg.Owner.name(desc)" to "Lpkg/Owner;name(desc)"
+        if (!t.startsWith("L") && !t.startsWith("(") && (value.startsWith("INVOKE") || value.equals("FIELD"))) {
+            int paren = t.indexOf('(') >= 0 ? t.indexOf('(') : (t.indexOf(':') >= 0 ? t.indexOf(':') : t.length());
+            int dot = t.lastIndexOf('.', paren);
+            if (dot > 0) t = "L" + t.substring(0, dot).replace('.', '/') + ";" + t.substring(dot + 1);
+        }
         boolean found = false;
         switch (value) {
             case "INVOKE", "INVOKE_ASSIGN", "INVOKE_STRING" -> {
@@ -390,8 +434,10 @@ public class MixinAudit {
                     if (i instanceof FieldInsnNode fi && fi.name.equals(name) && (owner == null || fi.owner.equals(owner)) && (desc == null || fi.desc.equals(desc))) found = true;
             }
             case "NEW" -> {
-                String type = t.startsWith("L") && t.endsWith(";") ? t.substring(1, t.length() - 1) : t;
-                if (type.contains("(")) type = type.substring(0, type.indexOf('(')).replaceAll("^L|;$", "");
+                String type;
+                if (t.startsWith("(")) type = Type.getReturnType(t).getInternalName();          // "(args)Lowner;"
+                else if (t.contains("(")) type = t.substring(0, t.indexOf('(')).replaceAll("^L|;$", "").replace('.', '/');
+                else type = (t.startsWith("L") && t.endsWith(";") ? t.substring(1, t.length() - 1) : t).replace('.', '/');
                 for (MethodNode m : matched) for (AbstractInsnNode i : m.instructions)
                     if (i instanceof TypeInsnNode ti && ti.getOpcode() == Opcodes.NEW && ti.desc.equals(type)) found = true;
             }

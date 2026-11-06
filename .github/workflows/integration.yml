@@ -164,7 +164,7 @@ jobs:
           cp "$REPORT"/jars/*.jar mods/ && cp ../fabric-mods/*.jar mods/ 2>/dev/null || true
           printf -- '-Dmixin.ignoreRequired=true\n-Dmixin.dumpTargetOnFailure=true\n-Dmixin.debug.verbose=false\n' > user_jvm_args.txt
           bash "$GITHUB_WORKSPACE/connector/.github/scripts/run-server.sh" "$REPORT/logs/server-lenient" || true
-          rm -f user_jvm_args.txt
+          : > user_jvm_args.txt   # run.sh requires the file to exist
           bash "$GITHUB_WORKSPACE/connector/.github/scripts/summarize-runtime.sh" "$REPORT/logs/server-lenient" > "$REPORT/logs/runtime-issues.txt" || true
 
       - name: Strict boot - Connector only
