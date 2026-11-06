@@ -44,6 +44,8 @@ public class ConnectorTransformerEnvironment implements TransformerEnvironment {
     private static final String AUDIT_REPORT_PATH = "patch_audit.txt";
 
     private static final MethodHandle BYTECODE_PROVIDER_CTR;
+    // FML 12 (NeoForge 26.3) takes the FMLMixinService directly; older FML took an FMLMixinClassProcessor
+    private static final boolean CTR_TAKES_SERVICE;
     
     private final String mcVersion;
     @Nullable
@@ -54,7 +56,17 @@ public class ConnectorTransformerEnvironment implements TransformerEnvironment {
         try {
             Class<?> bytecodeProviderClass = Class.forName("net.neoforged.fml.loading.mixin.FMLClassBytecodeProvider");
             MethodHandles.Lookup provLookup = MethodHandles.privateLookupIn(bytecodeProviderClass, MethodHandles.lookup());
-            BYTECODE_PROVIDER_CTR = provLookup.findConstructor(bytecodeProviderClass, MethodType.methodType(void.class, BytecodeProvider.class, FMLMixinClassProcessor.class));
+            MethodHandle ctr;
+            boolean takesService;
+            try {
+                ctr = provLookup.findConstructor(bytecodeProviderClass, MethodType.methodType(void.class, BytecodeProvider.class, FMLMixinService.class));
+                takesService = true;
+            } catch (NoSuchMethodException e) {
+                ctr = provLookup.findConstructor(bytecodeProviderClass, MethodType.methodType(void.class, BytecodeProvider.class, FMLMixinClassProcessor.class));
+                takesService = false;
+            }
+            BYTECODE_PROVIDER_CTR = ctr;
+            CTR_TAKES_SERVICE = takesService;
         } catch (Exception e) {
             throw new RuntimeException("Error reflecting into FMLClassBytecodeProvider", e);
         }
@@ -119,9 +131,9 @@ public class ConnectorTransformerEnvironment implements TransformerEnvironment {
 
             IClassBytecodeProvider newProvider;
             if (loader != null) {
-                FMLMixinClassProcessor processor = new FMLMixinClassProcessor(service);
                 BytecodeProvider bytecodeProvider = loader::getByteCode;
-                newProvider = (IClassBytecodeProvider) BYTECODE_PROVIDER_CTR.invoke(bytecodeProvider, processor);
+                Object secondArg = CTR_TAKES_SERVICE ? service : new FMLMixinClassProcessor(service);
+                newProvider = (IClassBytecodeProvider) BYTECODE_PROVIDER_CTR.invoke(bytecodeProvider, secondArg);
             } else {
                 newProvider = null;
             }
