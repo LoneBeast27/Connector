@@ -206,6 +206,7 @@ public class MixinAudit {
     }
 
     static void auditMixin(String where, ClassNode mixin) {
+        boolean commonSection = where.contains("[mixins]") || where.contains("[server]");
         List<AnnotationNode> ca = anns(mixin.visibleAnnotations, mixin.invisibleAnnotations);
         AnnotationNode mixAnn = find(ca, MIXIN);
         if (mixAnn == null) { issue("NOT_A_MIXIN", where + " :: no @Mixin annotation"); return; }
@@ -215,6 +216,7 @@ public class MixinAudit {
         for (Object o : list(val(mixAnn, "targets"))) targets.add(((String) o).replace('.', '/'));
 
         for (String t : targets) {
+            if (commonSection && t.startsWith("net/minecraft/client/")) issue("WARN_CLIENT_TARGET_IN_COMMON_SECTION", where + " :: targets client-only " + t + " (move to the \"client\" section)");
             ClassNode target = node(t);
             if (target == null) {
                 if (!pseudo) issue("TARGET_CLASS_MISSING", where + " :: @Mixin target " + t);
@@ -263,7 +265,16 @@ public class MixinAudit {
             if (accessor != null) {
                 String f = (String) val(accessor, "value");
                 if (f == null || f.isEmpty()) f = derive(m.name, "get", "is", "set");
-                if (findFieldAnyCase(target, f) == null) issue("ACCESSOR_FIELD_MISSING", sig + " :: @Accessor field " + f);
+                FieldNode fn = findFieldAnyCase(target, f);
+                if (fn == null) issue("ACCESSOR_FIELD_MISSING", sig + " :: @Accessor field " + f);
+                else {
+                    // getter: ()T must return the field's exact type; setter: (T)V must take it
+                    Type ft = Type.getType(fn.desc);
+                    Type[] a = Type.getArgumentTypes(m.desc);
+                    Type r = Type.getReturnType(m.desc);
+                    boolean ok = a.length == 0 ? r.equals(ft) : (a.length == 1 && a[0].equals(ft));
+                    if (!ok) issue("ACCESSOR_TYPE_MISMATCH", sig + " :: @Accessor " + f + " field is " + fn.desc);
+                }
                 continue;
             }
             AnnotationNode invoker = find(ma, INVOKER);

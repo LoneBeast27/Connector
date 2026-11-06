@@ -21,7 +21,8 @@ env:
   NEOFORGE_VERSION: 26.3.0.100
   ASM_VERSION: '9.8'
   # Fabric mods (Modrinth project slugs) loaded on the smoke-test server. Server-safe picks only.
-  SMOKE_MODS: 'cloth-config fabric-language-kotlin appleskin jade ferrite-core lithium'
+  # lithium dropped: has a native NeoForge build; its Fabric build's LevelChunk local-capture mixin conflicts with NeoForge patches
+  SMOKE_MODS: 'cloth-config fabric-language-kotlin appleskin jade ferrite-core'
 
 jobs:
   integration:
