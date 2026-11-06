@@ -1,0 +1,256 @@
+2026-11-06T15:00:40.376906901Z main WARN Advanced terminal features are not available in this environment
+[15:00:40] [main/INFO] [ne.ne.fm.st.Entrypoint/]: JVM Uptime at startup: 65ms
+[15:00:40] [main/INFO] [ne.ne.fm.lo.FMLLoader/]: Starting FancyModLoader version 12.0.12 (DEDICATED_SERVER in PROD)
+[15:00:40] [main/INFO] [ne.ne.fm.lo.FMLLoader/]: Game directory: /home/runner/work/Connector/Connector/server
+[15:00:40] [main/INFO] [ne.ne.fm.lo.EarlyServiceDiscovery/]: Found 4 early service jars (out of 74) in 17ms
+[15:00:40] [main/INFO] [ne.ne.fm.lo.FMLLoader/]: Loading FML Early Services:
+[15:00:40] [main/INFO] [ne.ne.fm.lo.FMLLoader/]:  - libraries/net/neoforged/fancymodloader/earlydisplay/12.0.12/earlydisplay-12.0.12.jar
+[15:00:40] [main/INFO] [ne.ne.fm.lo.FMLLoader/]:  - mods/launchpad-1.10.2+26.3-full.jar
+[15:00:40] [main/INFO] [ne.ne.fm.lo.FMLLoader/]:  - mods/connector-3.2.0-beta.1+26.3+dev-g602d473-full.jar
+[15:00:40] [main/INFO] [ne.ne.fm.lo.FMLLoader/]:  - libraries/net/neoforged/fancymodloader/loader/12.0.12/loader-12.0.12.jar
+[15:00:40] [main/INFO] [ne.ne.fm.lo.ImmediateWindowHandler/]: Not loading early display in headless mode.
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by org.sinytra.connector.util.ConnectorUtil (file:/home/runner/work/Connector/Connector/server/mods/connector-3.2.0-beta.1+26.3+dev-g602d473-full.jar)
+WARNING: Please consider reporting this to the maintainers of class org.sinytra.connector.util.ConnectorUtil
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[15:00:40] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=file:/home/runner/work/Connector/Connector/server/libraries/net/fabricmc/sponge-mixin/0.17.4+mixin.0.8.7/sponge-mixin-0.17.4+mixin.0.8.7.jar Service=FML Env=SERVER
+[15:00:40] [main/INFO] [ne.ne.fm.lo.mo.lo.GameLocator/]: Failed to find common Minecraft classes and resources on the classpath. Assuming we're launching production.
+[15:00:41] [main/INFO] [ne.ne.fm.lo.mo.lo.JarInJarDependencyLocator/]: Found 51 dependencies adding them to mods collection
+[15:00:41] [main/INFO] [or.si.la.se.FabricJarInJarLocator/]: Found 14 nested jars, adding them to mods collection
+[15:00:44] [main/INFO] [ne.ne.fm.lo.mo.ModDiscoverer/]: 
+     Mod List:
+		Name Version (Mod Id)
+
+		AppleSkin 3.0.10+mc26.3 (appleskin)
+		Cloth Config v26.3 26.3.159 (cloth_config)
+		cloth_basic_math 0.6.1 (cloth_basic_math)
+		Fabric Language Kotlin 1.14.2+kotlin.2.4.21 (fabric_language_kotlin)
+		FerriteCore 9.0.0 (ferritecore)
+		Forgified Fabric Advancement API (v1) 1.0.1+fa21a1c55d (fabric_advancement_api_v1)
+		Forgified Fabric API 0.165.2+26.3+4.0.2 (fabric_api)
+		Forgified Fabric API Base 2.0.6+e7ada5645d (fabric_api_base)
+		Forgified Fabric API Fluid Types 1.1.0+993fb7725d (ffapi_fluid_types)
+		Forgified Fabric API Lookup API (v1) 2.0.24+e7ada5645d (fabric_api_lookup_api_v1)
+		Forgified Fabric Biome API (v1) 20.1.1+afd84b415d (fabric_biome_api_v1)
+		Forgified Fabric Block API (v1) 3.1.0+e7ada5645d (fabric_block_api_v1)
+		Forgified Fabric BlockGetter API (v2) 2.0.9+71cd11ab5d (fabric_block_getter_api_v2)
+		Forgified Fabric Client Game Test API (v1) 6.0.12+afd84b415d (fabric_client_gametest_api_v1)
+		Forgified Fabric Command API (v2) 3.1.2+71cd11ab5d (fabric_command_api_v2)
+		Forgified Fabric Content Registries (v0) 15.0.7+00777e5a5d (fabric_content_registries_v0)
+		Forgified Fabric Convention Tags (v2) 4.10.5+71cd11ab5d (fabric_convention_tags_v2)
+		Forgified Fabric Creative Tab API (v1) 5.0.22+71cd11ab5d (fabric_creative_tab_api_v1)
+		Forgified Fabric Data Attachment API (v1) 2.2.34+afd84b415d (fabric_data_attachment_api_v1)
+		Forgified Fabric Data Generation API (v1) 27.4.3+241bd9155d (fabric_data_generation_api_v1)
+		Forgified Fabric Debug API (v1) 1.0.5+71cd11ab5d (fabric_debug_api_v1)
+		Forgified Fabric Dimensions API (v1) 5.1.20+e7ada5645d (fabric_dimensions_v1)
+		Forgified Fabric Entity Events (v1) 6.0.4+5d9642955d (fabric_entity_events_v1)
+		Forgified Fabric Events Interaction (v0) 5.3.10+fa21a1c55d (fabric_events_interaction_v0)
+		Forgified Fabric Game Rule API (v1) 4.0.10+71cd11ab5d (fabric_game_rule_api_v1)
+		Forgified Fabric Game Test API (v1) 4.0.36+e7ada5645d (fabric_gametest_api_v1)
+		Forgified Fabric Item API (v1) 14.8.1+241bd9155d (fabric_item_api_v1)
+		Forgified Fabric Key Mapping API (v1) 2.0.8+71cd11ab5d (fabric_key_mapping_api_v1)
+		Forgified Fabric Lifecycle Events (v1) 4.1.9+241bd9155d (fabric_lifecycle_events_v1)
+		Forgified Fabric Loot API (v3) 4.0.9+71cd11ab5d (fabric_loot_api_v3)
+		Forgified Fabric Menu API (v1) 2.0.31+e7ada5645d (fabric_menu_api_v1)
+		Forgified Fabric Message API (v1) 7.0.10+e7ada5645d (fabric_message_api_v1)
+		Forgified Fabric Model Loading API (v1) 8.0.37+71cd11ab5d (fabric_model_loading_api_v1)
+		Forgified Fabric Networking API (v1) 6.4.1+71cd11ab5d (fabric_networking_api_v1)
+		Forgified Fabric Object Builder API (v1) 24.1.13+afd84b415d (fabric_object_builder_api_v1)
+		Forgified Fabric Particles (v1) 5.0.28+71cd11ab5d (fabric_particles_v1)
+		Forgified Fabric Permission API (v1) 1.0.8+e7ada5645d (fabric_permission_api_v1)
+		Forgified Fabric Recipe API (v1) 10.0.12+e7ada5645d (fabric_recipe_api_v1)
+		Forgified Fabric Registry Sync (v0) 8.0.5+e7ada5645d (fabric_registry_sync_v0)
+		Forgified Fabric Renderer - Indigo 9.1.25+e7ada5645d (fabric_renderer_indigo)
+		Forgified Fabric Renderer API (v1) 17.0.17+71cd11ab5d (fabric_renderer_api_v1)
+		Forgified Fabric Rendering (v1) 27.2.0+e7ada5645d (fabric_rendering_v1)
+		Forgified Fabric Rendering Fluids (v1) 6.0.6+71cd11ab5d (fabric_rendering_fluids_v1)
+		Forgified Fabric Resource Conditions API (v1) 6.2.1+fa21a1c55d (fabric_resource_conditions_api_v1)
+		Forgified Fabric Resource Loader (v0) 3.3.27+71cd11ab5d (fabric_resource_loader_v0)
+		Forgified Fabric Resource Loader (v1) 3.1.0+71cd11ab5d (fabric_resource_loader_v1)
+		Forgified Fabric Screen API (v1) 5.2.4+afd84b415d (fabric_screen_api_v1)
+		Forgified Fabric Serialization API (v1) 2.0.7+71cd11ab5d (fabric_serialization_api_v1)
+		Forgified Fabric Sound API (v1) 2.0.7+71cd11ab5d (fabric_sound_api_v1)
+		Forgified Fabric Tag API (v1) 2.1.11+71cd11ab5d (fabric_tag_api_v1)
+		Forgified Fabric Transfer API (v1) 8.0.26+e7ada5645d (fabric_transfer_api_v1)
+		Forgified Fabric Transitive Access Wideners (v1) 8.1.17+e7ada5645d (fabric_transitive_access_wideners_v1)
+		Jade 26.3.5+fabric (jade)
+		Launchpad 1.10.2+26.3 (launchpad)
+		Minecraft 26.3 (minecraft)
+		NeoForge 26.3.0.100 (neoforge)
+		Sinytra Connector 3.2.0-beta.1+26.3+dev-g602d473 (connector)
+[15:00:44] [main/INFO] [ne.ne.fm.lo.FMLLoader/]: Loading FML Plugins:
+[15:00:44] [main/INFO] [ne.ne.fm.lo.FMLLoader/]:  - mods/launchpad-1.10.2+26.3-full.jar > org.sinytra.launchpad-1.10.2+26.3-dummy.jar
+[15:00:44] [main/INFO] [ne.ne.fm.lo.FMLLoader/]:  - ~libraries/net/neoforged/neoforge/26.3.0.100/neoforge-26.3.0.100-universal.jar > net.neoforged.neoforge-coremods-26.3.0.100.jar
+[15:00:45] [main/INFO] [ne.ne.fm.lo.FMLLoader/]: Building game content classloader:
+ - appleskin (composite(filtered(jar(.cache/connector/appleskin.jar))))
+ - authlib (jar(libraries/com/mojang/authlib/10.0.77/authlib-10.0.77.jar))
+ - brigadier (jar(libraries/com/mojang/brigadier/1.3.11/brigadier-1.3.11.jar))
+ - cloth_basic_math (composite(filtered(jar(.cache/connector/cloth-config$basic-math-0.6.1.jar))))
+ - cloth_config (composite(filtered(jar(.cache/connector/cloth-config.jar))))
+ - connector (jar(mods/connector-3.2.0-beta.1+26.3+dev-g602d473-full.jar > org.sinytra.connector-3.2.0-beta.1+26.3+dev-g602d473-mod.jar))
+ - fabric_advancement_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-advancement-api-v1-1.0.1+fa21a1c55d.jar))
+ - fabric_api (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar))
+ - fabric_api_base (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-api-base-2.0.6+e7ada5645d.jar))
+ - fabric_api_lookup_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-api-lookup-api-v1-2.0.24+e7ada5645d.jar))
+ - fabric_biome_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-biome-api-v1-20.1.1+afd84b415d.jar))
+ - fabric_block_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-block-api-v1-3.1.0+e7ada5645d.jar))
+ - fabric_block_getter_api_v2 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-block-getter-api-v2-2.0.9+71cd11ab5d.jar))
+ - fabric_client_gametest_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-client-gametest-api-v1-6.0.12+afd84b415d.jar))
+ - fabric_command_api_v2 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-command-api-v2-3.1.2+71cd11ab5d.jar))
+ - fabric_content_registries_v0 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-content-registries-v0-15.0.7+00777e5a5d.jar))
+ - fabric_convention_tags_v2 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-convention-tags-v2-4.10.5+71cd11ab5d.jar))
+ - fabric_creative_tab_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-creative-tab-api-v1-5.0.22+71cd11ab5d.jar))
+ - fabric_data_attachment_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-data-attachment-api-v1-2.2.34+afd84b415d.jar))
+ - fabric_data_generation_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-data-generation-api-v1-27.4.3+241bd9155d.jar))
+ - fabric_debug_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-debug-api-v1-1.0.5+71cd11ab5d.jar))
+ - fabric_dimensions_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-dimensions-v1-5.1.20+e7ada5645d.jar))
+ - fabric_entity_events_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-entity-events-v1-6.0.4+5d9642955d.jar))
+ - fabric_events_interaction_v0 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-events-interaction-v0-5.3.10+fa21a1c55d.jar))
+ - fabric_game_rule_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-game-rule-api-v1-4.0.10+71cd11ab5d.jar))
+ - fabric_gametest_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-gametest-api-v1-4.0.36+e7ada5645d.jar))
+ - fabric_item_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-item-api-v1-14.8.1+241bd9155d.jar))
+ - fabric_key_mapping_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-key-mapping-api-v1-2.0.8+71cd11ab5d.jar))
+ - fabric_language_kotlin (composite(filtered(jar(.cache/connector/fabric-language-kotlin.jar))))
+ - fabric_lifecycle_events_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-lifecycle-events-v1-4.1.9+241bd9155d.jar))
+ - fabric_loot_api_v3 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-loot-api-v3-4.0.9+71cd11ab5d.jar))
+ - fabric_menu_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-menu-api-v1-2.0.31+e7ada5645d.jar))
+ - fabric_message_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-message-api-v1-7.0.10+e7ada5645d.jar))
+ - fabric_model_loading_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-model-loading-api-v1-8.0.37+71cd11ab5d.jar))
+ - fabric_networking_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-networking-api-v1-6.4.1+71cd11ab5d.jar))
+ - fabric_object_builder_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-object-builder-api-v1-24.1.13+afd84b415d.jar))
+ - fabric_particles_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-particles-v1-5.0.28+71cd11ab5d.jar))
+ - fabric_permission_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-permission-api-v1-1.0.8+e7ada5645d.jar))
+ - fabric_recipe_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-recipe-api-v1-10.0.12+e7ada5645d.jar))
+ - fabric_registry_sync_v0 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-registry-sync-v0-8.0.5+e7ada5645d.jar))
+ - fabric_renderer_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-renderer-api-v1-17.0.17+71cd11ab5d.jar))
+ - fabric_renderer_indigo (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-renderer-indigo-9.1.25+e7ada5645d.jar))
+ - fabric_rendering_fluids_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-rendering-fluids-v1-6.0.6+71cd11ab5d.jar))
+ - fabric_rendering_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-rendering-v1-27.2.0+e7ada5645d.jar))
+ - fabric_resource_conditions_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-resource-conditions-api-v1-6.2.1+fa21a1c55d.jar))
+ - fabric_resource_loader_v0 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-resource-loader-v0-3.3.27+71cd11ab5d.jar))
+ - fabric_resource_loader_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-resource-loader-v1-3.1.0+71cd11ab5d.jar))
+ - fabric_screen_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-screen-api-v1-5.2.4+afd84b415d.jar))
+ - fabric_serialization_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-serialization-api-v1-2.0.7+71cd11ab5d.jar))
+ - fabric_sound_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-sound-api-v1-2.0.7+71cd11ab5d.jar))
+ - fabric_tag_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-tag-api-v1-2.1.11+71cd11ab5d.jar))
+ - fabric_transfer_api_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-transfer-api-v1-8.0.26+e7ada5645d.jar))
+ - fabric_transitive_access_wideners_v1 (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.fabric-transitive-access-wideners-v1-8.1.17+e7ada5645d.jar))
+ - ferritecore (composite(filtered(jar(.cache/connector/ferrite-core.jar))))
+ - ffapi_fluid_types (jar(mods/forgified-fabric-api-0.165.2+26.3+4.0.2.jar > org.sinytra.forgified-fabric-api.ffapi-fluid-types-1.1.0+993fb7725d.jar))
+ - jade (composite(filtered(jar(.cache/connector/jade.jar))))
+ - kotlin.reflect (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlin-reflect-2.4.21.jar))))
+ - kotlin.stdlib (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlin-stdlib-2.4.21.jar))))
+ - kotlin.stdlib.jdk7 (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlin-stdlib-jdk7-2.4.21.jar))))
+ - kotlin.stdlib.jdk8 (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlin-stdlib-jdk8-2.4.21.jar))))
+ - kotlinx.atomicfu (composite(filtered(jar(.cache/connector/fabric-language-kotlin$atomicfu-jvm-0.33.0.jar))))
+ - kotlinx.coroutines.core (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlinx-coroutines-core-jvm-1.11.0.jar))))
+ - kotlinx.coroutines.jdk8 (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlinx-coroutines-jdk8-1.11.0.jar))))
+ - kotlinx.datetime (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlinx-datetime-jvm-0.8.0.jar))))
+ - kotlinx.io.bytestring (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlinx-io-bytestring-jvm-0.9.1.jar))))
+ - kotlinx.io.core (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlinx-io-core-jvm-0.9.1.jar))))
+ - kotlinx.serialization.cbor (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlinx-serialization-cbor-jvm-1.11.0.jar))))
+ - kotlinx.serialization.core (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlinx-serialization-core-jvm-1.11.0.jar))))
+ - kotlinx.serialization.json (composite(filtered(jar(.cache/connector/fabric-language-kotlin$kotlinx-serialization-json-jvm-1.11.0.jar))))
+ - launchpad (jar(mods/launchpad-1.10.2+26.3-full.jar > org.sinytra.launchpad.launchpad-1.10.2+26.3-game.jar))
+ - minecraft (jar(~libraries/net/neoforged/minecraft-server-patched/26.3.0.100/minecraft-server-patched-26.3.0.100.jar))
+ - mixinextras.neoforge (jar(~libraries/net/neoforged/neoforge/26.3.0.100/neoforge-26.3.0.100-universal.jar > mixinextras-neoforge-0.5.5.jar))
+ - neoforge (jar(~libraries/net/neoforged/neoforge/26.3.0.100/neoforge-26.3.0.100-universal.jar))
+ - net.neoforged.fml.generated (empty(VirtualJar/net.neoforged.fml.generated))
+[15:00:45] [main/INFO] [ne.ne.fm.lo.FMLLoader/]: Built game content classloader in 179ms
+[15:00:46] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.5).
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by com.sun.jna.Native in an unnamed module (file:/home/runner/work/Connector/Connector/server/libraries/net/java/dev/jna/jna/5.17.0/jna-5.17.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[15:00:53] [modloading-worker-0/INFO] [ne.ne.ne.co.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 26.3.0.100, for MC 26.3
+[15:00:54] [modloading-worker-0/INFO] [ne.ne.ne.co.VersionChecker/]: No mods enabled for version check
+[15:00:54] [main/INFO] [mojang/MinecraftServicesDiscoveryService]: Environment: Environment[discoveryUrl=https://discovery.minecraftservices.com/minecraft/client, name=PROD]
+[15:00:55] [Worker-Main-3/INFO] [minecraft/Main]: No existing world data, creating new world
+[15:00:55] [Worker-Main-3/ERROR] [minecraft/DedicatedServerProperties]: No key layers in MapLike[{}]
+[15:00:56] [Worker-Main-1/INFO] [minecraft/AdvancementTree]: Loaded 1866 advancements
+[15:00:57] [main/INFO] [ne.ne.ne.co.cr.RecipePriorityManager/]: Loaded 0 recipe priority overrides
+[15:00:57] [Server thread/INFO] [minecraft/DedicatedServer]: Starting minecraft server version 26.3
+[15:00:57] [Server thread/INFO] [minecraft/DedicatedServer]: Loading properties
+[15:00:57] [Server thread/INFO] [minecraft/DedicatedServer]: Default game type: SURVIVAL
+[15:00:57] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[15:00:57] [Server thread/INFO] [minecraft/DedicatedServer]: Starting Minecraft server on *:25565
+2026-11-06T15:00:57.706945085Z Server thread ERROR An exception occurred processing Appender DebugFile
+org.apache.logging.log4j.core.appender.AppenderLoggingException: java.lang.NoClassDefFoundError: Could not initialize class io.netty.channel.kqueue.Native
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:164)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender0(AppenderControl.java:133)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppenderPreventRecursion(AppenderControl.java:124)
+	at org.apache.logging.log4j.core.config.AppenderControl.callAppender(AppenderControl.java:88)
+	at org.apache.logging.log4j.core.config.LoggerConfig.callAppenders(LoggerConfig.java:807)
+	at org.apache.logging.log4j.core.config.LoggerConfig.processLogEvent(LoggerConfig.java:765)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:741)
+	at org.apache.logging.log4j.core.config.LoggerConfig.log(LoggerConfig.java:650)
+	at org.apache.logging.log4j.core.config.AwaitCompletionReliabilityStrategy.log(AwaitCompletionReliabilityStrategy.java:67)
+	at org.apache.logging.log4j.core.Logger.logMessage(Logger.java:173)
+	at org.apache.logging.slf4j.Log4jLogger.log(Log4jLogger.java:374)
+	at io.netty.util.internal.logging.LocationAwareSlf4JLogger.log(LocationAwareSlf4JLogger.java:46)
+	at io.netty.util.internal.logging.LocationAwareSlf4JLogger.debug(LocationAwareSlf4JLogger.java:129)
+	at io.netty.channel.kqueue.KQueue.<clinit>(KQueue.java:54)
+	at TRANSFORMER/minecraft@26.3/net.minecraft.server.network.EventLoopGroupHolder.remote(EventLoopGroupHolder.java:59)
+	at TRANSFORMER/minecraft@26.3/net.minecraft.server.network.ServerConnectionListener.startTcpServerListener(ServerConnectionListener.java:63)
+	at TRANSFORMER/minecraft@26.3/net.minecraft.server.dedicated.DedicatedServer.initServer(DedicatedServer.java:217)
+	at TRANSFORMER/minecraft@26.3/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:725)
+	at TRANSFORMER/minecraft@26.3/net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:306)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: java.lang.NoClassDefFoundError: Could not initialize class io.netty.channel.kqueue.Native
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:547)
+	at org.apache.logging.log4j.util.LoaderUtil.loadClass(LoaderUtil.java:212)
+	at org.apache.logging.log4j.core.pattern.ThrowableExtendedStackTraceRenderer.lambda$static$1(ThrowableExtendedStackTraceRenderer.java:196)
+	at org.apache.logging.log4j.core.pattern.ThrowableExtendedStackTraceRenderer$ExtendedContext.loadClass(ThrowableExtendedStackTraceRenderer.java:180)
+	at org.apache.logging.log4j.core.pattern.ThrowableExtendedStackTraceRenderer$ExtendedContext.createClassResourceInfoByName(ThrowableExtendedStackTraceRenderer.java:166)
+	at org.apache.logging.log4j.core.pattern.ThrowableExtendedStackTraceRenderer$ExtendedContext.ofThrowable(ThrowableExtendedStackTraceRenderer.java:96)
+	at org.apache.logging.log4j.core.pattern.ThrowableExtendedStackTraceRenderer$ExtendedContext.access$000(ThrowableExtendedStackTraceRenderer.java:81)
+	at org.apache.logging.log4j.core.pattern.ThrowableExtendedStackTraceRenderer.createContext(ThrowableExtendedStackTraceRenderer.java:43)
+	at org.apache.logging.log4j.core.pattern.ThrowableExtendedStackTraceRenderer.createContext(ThrowableExtendedStackTraceRenderer.java:34)
+	at org.apache.logging.log4j.core.pattern.ThrowableStackTraceRenderer.renderThrowable(ThrowableStackTraceRenderer.java:55)
+	at org.apache.logging.log4j.core.pattern.ThrowablePatternConverter.format(ThrowablePatternConverter.java:130)
+	at org.apache.logging.log4j.core.layout.PatternLayout$NoFormatPatternSerializer.toSerializable(PatternLayout.java:354)
+	at org.apache.logging.log4j.core.layout.PatternLayout.toText(PatternLayout.java:251)
+	at org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:237)
+	at org.apache.logging.log4j.core.layout.PatternLayout.encode(PatternLayout.java:57)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.directEncodeEvent(AbstractOutputStreamAppender.java:227)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.tryAppend(AbstractOutputStreamAppender.java:220)
+	at org.apache.logging.log4j.core.appender.AbstractOutputStreamAppender.append(AbstractOutputStreamAppender.java:211)
+	at org.apache.logging.log4j.core.appender.RollingRandomAccessFileAppender.append(RollingRandomAccessFileAppender.java:395)
+	at org.apache.logging.log4j.core.config.AppenderControl.tryCallAppender(AppenderControl.java:160)
+	... 19 more
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.IllegalStateException: Only supported on OSX/BSD [in thread "Server thread"]
+	at io.netty.channel.kqueue.Native.loadNativeLibrary(Native.java:159)
+	at io.netty.channel.kqueue.Native.<clinit>(Native.java:76)
+	at io.netty.channel.kqueue.KQueue.<clinit>(KQueue.java:38)
+	... 6 more
+
+[15:00:57] [Server thread/WARN] [minecraft/DedicatedServer]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[15:00:57] [Server thread/WARN] [minecraft/DedicatedServer]: The server will make no attempt to authenticate usernames. Beware.
+[15:00:57] [Server thread/WARN] [minecraft/DedicatedServer]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[15:00:57] [Server thread/WARN] [minecraft/DedicatedServer]: To change this, set "online-mode" to "true" in the server.properties file.
+[15:00:57] [Server thread/INFO] [minecraft/DedicatedServer]: Preparing level "world"
+[15:00:58] [Server thread/INFO] [minecraft/LoggingLevelLoadListener]: Selecting global world spawn...
+[15:00:58] [Server thread/INFO] [minecraft/LoggingLevelLoadListener]: Loading 0 persistent chunks...
+[15:00:58] [Server thread/INFO] [minecraft/LoggingLevelLoadListener]: Preparing spawn area: 100%
+[15:00:58] [Server thread/INFO] [minecraft/LoggingLevelLoadListener]: Time elapsed: 571 ms
+[15:00:58] [Server thread/INFO] [minecraft/DedicatedServer]: Done (0.798s)! For help, type "help"
+[15:00:58] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:00:58] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[15:00:58] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[15:00:58] [Server thread/INFO] [ne.ne.ne.se.pe.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[15:00:58] [Server thread/INFO] [sn.ja.Jade/]: Start loading plugin from Jade: snownee.jade.addon.core.CorePlugin
+[15:00:58] [Server thread/INFO] [sn.ja.Jade/]: Start loading plugin from Jade: snownee.jade.addon.vanilla.VanillaPlugin
+[15:00:58] [Server thread/INFO] [sn.ja.Jade/]: Start loading plugin from Jade: snownee.jade.addon.universal.UniversalPlugin
+[15:00:58] [Server thread/INFO] [sn.ja.Jade/]: Start loading plugin from Jade: snownee.jade.addon.access.AccessibilityPlugin
+[15:00:58] [Server thread/INFO] [sn.ja.Jade/]: Start loading plugin from Jade: snownee.jade.addon.debug.DebugPlugin
+[15:01:19] [Server thread/INFO] [minecraft/MinecraftServer]: System chat: Stopping the server
+[15:01:19] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[15:01:19] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[15:01:19] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[15:01:19] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[15:01:19] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[15:01:19] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[15:01:19] [main/INFO] [ne.ne.fm.lo.FMLLoader/]: Closing FML Loader 10612860
+[15:01:19] [main/INFO] [ne.ne.fm.ModLoader/]: Clearing ModLoader

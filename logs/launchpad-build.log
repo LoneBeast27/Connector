@@ -1,0 +1,61 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+> Configure project :
+Version: 1.10.2+26.3
+Creating Minecraft artifacts without recompilation.
+
+> Task :depsJar FROM-CACHE
+
+> Task :createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/launchpad/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.41s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.04s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.04s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 1.12s
+
+
+> Task :compileJava FROM-CACHE
+> Task :generateModMetadata
+> Task :processResources
+> Task :classes
+> Task :dummyLoaderJar
+> Task :compileGameLibraryJava FROM-CACHE
+> Task :generateGameLibraryModMetadata
+> Task :processGameLibraryResources
+> Task :gameLibraryClasses
+> Task :gameLibraryJarJar NO-SOURCE
+> Task :gameLibraryJar
+> Task :jarJar
+> Task :jar
+> Task :fullJar
+> Task :sourcesJar
+> Task :generateMetadataFileForMavenJavaPublication
+> Task :generatePomFileForMavenJavaPublication
+> Task :publishMavenJavaPublicationToMavenLocal
+> Task :publishToMavenLocal
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/launchpad-1793977206386.json
+
+================================================================================
+ PUBLISHED MAVEN PUBLICATIONS
+================================================================================
+
+	org.sinytra.launchpad:launchpad:1.10.2+26.3
+
+
+BUILD SUCCESSFUL in 13s
+17 actionable tasks: 14 executed, 3 from cache
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.0/userguide/configuration_cache_enabling.html

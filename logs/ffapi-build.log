@@ -1,0 +1,2093 @@
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :buildSrc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :buildSrc:generateExternalPluginSpecBuilders FROM-CACHE
+> Task :buildSrc:extractPrecompiledScriptPluginPlugins FROM-CACHE
+> Task :buildSrc:compilePluginsBlocks FROM-CACHE
+> Task :buildSrc:generatePrecompiledScriptPluginAccessors FROM-CACHE
+> Task :buildSrc:generateScriptPluginAdapters FROM-CACHE
+> Task :buildSrc:compileKotlin FROM-CACHE
+> Task :buildSrc:compileJava NO-SOURCE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:pluginDescriptors
+> Task :buildSrc:processResources
+> Task :buildSrc:classes
+> Task :buildSrc:jar
+
+> Configure project :
+Version: 0.165.2+26.3+4.0.2
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+Creating Minecraft artifacts without recompilation.
+
+> Task :generateAccessTransformer
+> Task :fabric-block-getter-api-v2:generateAccessTransformer
+> Task :fabric-advancement-api-v1:generateAccessTransformer
+> Task :fabric-block-api-v1:generateAccessTransformer
+> Task :fabric-block-getter-api-v2:copyAccessTransformersPublications
+> Task :fabric-biome-api-v1:generateAccessTransformer
+> Task :fabric-advancement-api-v1:copyAccessTransformersPublications
+> Task :fabric-block-api-v1:copyAccessTransformersPublications
+> Task :fabric-biome-api-v1:copyAccessTransformersPublications
+> Task :fabric-command-api-v2:generateAccessTransformer
+> Task :fabric-client-gametest-api-v1:generateAccessTransformer
+> Task :fabric-content-registries-v0:generateAccessTransformer
+> Task :fabric-convention-tags-v2:generateAccessTransformer
+> Task :fabric-content-registries-v0:copyAccessTransformersPublications
+> Task :fabric-client-gametest-api-v1:copyAccessTransformersPublications
+> Task :fabric-command-api-v2:copyAccessTransformersPublications
+> Task :fabric-creative-tab-api-v1:generateAccessTransformer
+> Task :fabric-convention-tags-v2:copyAccessTransformersPublications
+> Task :fabric-data-attachment-api-v1:generateAccessTransformer
+> Task :fabric-creative-tab-api-v1:copyAccessTransformersPublications
+> Task :fabric-data-attachment-api-v1:copyAccessTransformersPublications
+> Task :fabric-debug-api-v1:generateAccessTransformer
+> Task :fabric-game-rule-api-v1:generateAccessTransformer
+> Task :fabric-entity-events-v1:generateAccessTransformer
+> Task :fabric-debug-api-v1:copyAccessTransformersPublications
+> Task :fabric-game-rule-api-v1:copyAccessTransformersPublications
+> Task :fabric-data-generation-api-v1:generateAccessTransformer
+> Task :fabric-entity-events-v1:copyAccessTransformersPublications
+> Task :fabric-data-generation-api-v1:copyAccessTransformersPublications
+> Task :fabric-gametest-api-v1:generateAccessTransformer
+> Task :fabric-lifecycle-events-v1:generateAccessTransformer
+> Task :fabric-item-api-v1:generateAccessTransformer
+> Task :fabric-item-api-v1:copyAccessTransformersPublications
+> Task :fabric-loot-api-v3:generateAccessTransformer
+> Task :fabric-lifecycle-events-v1:copyAccessTransformersPublications
+> Task :fabric-gametest-api-v1:copyAccessTransformersPublications
+> Task :fabric-loot-api-v3:copyAccessTransformersPublications
+> Task :fabric-model-loading-api-v1:generateAccessTransformer
+> Task :fabric-menu-api-v1:generateAccessTransformer
+> Task :fabric-networking-api-v1:generateAccessTransformer
+> Task :fabric-object-builder-api-v1:generateAccessTransformer
+> Task :fabric-model-loading-api-v1:copyAccessTransformersPublications
+> Task :fabric-menu-api-v1:copyAccessTransformersPublications
+> Task :fabric-object-builder-api-v1:copyAccessTransformersPublications
+> Task :fabric-networking-api-v1:copyAccessTransformersPublications
+> Task :fabric-particles-v1:generateAccessTransformer
+> Task :fabric-particles-v1:copyAccessTransformersPublications
+> Task :fabric-permission-api-v1:generateAccessTransformer
+> Task :fabric-recipe-api-v1:generateAccessTransformer
+> Task :fabric-registry-sync-v0:generateAccessTransformer
+> Task :fabric-renderer-api-v1:generateAccessTransformer
+> Task :fabric-recipe-api-v1:copyAccessTransformersPublications
+> Task :fabric-permission-api-v1:copyAccessTransformersPublications
+> Task :fabric-renderer-api-v1:copyAccessTransformersPublications
+> Task :fabric-registry-sync-v0:copyAccessTransformersPublications
+> Task :fabric-renderer-indigo:generateAccessTransformer
+> Task :fabric-rendering-v1:generateAccessTransformer
+> Task :fabric-rendering-fluids-v1:generateAccessTransformer
+> Task :fabric-resource-conditions-api-v1:generateAccessTransformer
+> Task :fabric-renderer-indigo:copyAccessTransformersPublications
+> Task :fabric-rendering-v1:copyAccessTransformersPublications
+> Task :fabric-rendering-fluids-v1:copyAccessTransformersPublications
+> Task :fabric-resource-conditions-api-v1:copyAccessTransformersPublications
+> Task :fabric-serialization-api-v1:generateAccessTransformer
+> Task :fabric-resource-loader-v1:generateAccessTransformer
+> Task :fabric-sound-api-v1:generateAccessTransformer
+> Task :fabric-tag-api-v1:generateAccessTransformer
+> Task :fabric-serialization-api-v1:copyAccessTransformersPublications
+> Task :fabric-resource-loader-v1:copyAccessTransformersPublications
+> Task :generateInjectedInterfaces
+> Task :fabric-sound-api-v1:copyAccessTransformersPublications
+> Task :fabric-tag-api-v1:copyAccessTransformersPublications
+> Task :fabric-transitive-access-wideners-v1:generateAccessTransformer
+> Task :fabric-transitive-access-wideners-v1:copyAccessTransformersPublications
+> Task :mergeAccessTransformers
+> Task :copyAccessTransformersPublications
+> Task :fabric-advancement-api-v1:generateInjectedInterfaces
+> Task :fabric-command-api-v2:generateInjectedInterfaces
+> Task :fabric-block-getter-api-v2:generateInjectedInterfaces
+> Task :fabric-block-api-v1:generateInjectedInterfaces
+> Task :fabric-advancement-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-block-getter-api-v2:copyInterfaceInjectionDataPublications
+> Task :fabric-block-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-command-api-v2:copyInterfaceInjectionDataPublications
+> Task :fabric-content-registries-v0:generateInjectedInterfaces
+> Task :fabric-convention-tags-v2:generateInjectedInterfaces
+> Task :fabric-data-attachment-api-v1:generateInjectedInterfaces
+> Task :fabric-creative-tab-api-v1:generateInjectedInterfaces
+> Task :fabric-creative-tab-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-content-registries-v0:copyInterfaceInjectionDataPublications
+> Task :fabric-data-attachment-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-convention-tags-v2:copyInterfaceInjectionDataPublications
+> Task :fabric-item-api-v1:generateInjectedInterfaces
+> Task :fabric-data-generation-api-v1:generateInjectedInterfaces
+> Task :fabric-entity-events-v1:generateInjectedInterfaces
+> Task :fabric-lifecycle-events-v1:generateInjectedInterfaces
+> Task :fabric-data-generation-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-entity-events-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-item-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-lifecycle-events-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-menu-api-v1:generateInjectedInterfaces
+> Task :fabric-loot-api-v3:generateInjectedInterfaces
+> Task :fabric-model-loading-api-v1:generateInjectedInterfaces
+> Task :fabric-networking-api-v1:generateInjectedInterfaces
+> Task :fabric-model-loading-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-menu-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-loot-api-v3:copyInterfaceInjectionDataPublications
+> Task :fabric-networking-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-object-builder-api-v1:generateInjectedInterfaces
+> Task :fabric-particles-v1:generateInjectedInterfaces
+> Task :fabric-object-builder-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-permission-api-v1:generateInjectedInterfaces
+> Task :fabric-recipe-api-v1:generateInjectedInterfaces
+> Task :fabric-particles-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-permission-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-registry-sync-v0:generateInjectedInterfaces
+> Task :fabric-recipe-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-registry-sync-v0:copyInterfaceInjectionDataPublications
+> Task :fabric-renderer-api-v1:generateInjectedInterfaces
+> Task :fabric-rendering-v1:generateInjectedInterfaces
+> Task :fabric-resource-loader-v1:generateInjectedInterfaces
+> Task :fabric-rendering-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-renderer-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-serialization-api-v1:generateInjectedInterfaces
+> Task :fabric-sound-api-v1:generateInjectedInterfaces
+> Task :fabric-tag-api-v1:generateInjectedInterfaces
+> Task :fabric-resource-loader-v1:copyInterfaceInjectionDataPublications
+> Task :generateImplPackageInfos NO-SOURCE
+> Task :fabric-serialization-api-v1:copyInterfaceInjectionDataPublications
+> Task :fabric-tag-api-v1:copyInterfaceInjectionDataPublications
+> Task :generateForgeModEntrypoint NO-SOURCE
+> Task :fabric-sound-api-v1:copyInterfaceInjectionDataPublications
+> Task :mergeInterfaces
+> Task :copyInterfaceInjectionDataPublications
+
+> Task :fabric-api-base:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-api-base/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.11s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.07s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.09s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.50s
+
+
+> Task :fabric-advancement-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-advancement-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.
+> Task :fabric-api-base:generateImplPackageInfos
+> Task :fabric-api-base:generateForgeModEntrypoint
+
+> Task :fabric-resource-loader-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-resource-loader-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.91s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.10s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.10s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.01s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.01s
+Total runtime: 4.39s
+
+
+> Task :fabric-resource-loader-v1:generateImplPackageInfos
+
+> Task :fabric-advancement-api-v1:createMinecraftArtifacts
+..  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.99s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+
+> Task :fabric-resource-loader-v1:generateForgeModEntrypoint
+
+> Task :createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be......  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 4.21s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+
+> Task :fabric-advancement-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.12s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.13s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 5.73s
+
+
+> Task :fabric-advancement-api-v1:generateImplPackageInfos
+> Task :fabric-advancement-api-v1:generateForgeModEntrypoint
+> Task :fabric-api-base:compileJava FROM-CACHE
+
+> Task :fabric-api-lookup-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-api-lookup-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.13s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.08s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.08s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+
+> Task :fabric-resource-loader-v1:compileJava FROM-CACHE
+
+> Task :createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.13s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.13s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ ↳ Running external tool net.neoforged.installertools:installertools:4.0.12:fatjar
+
+> Task :fabric-api-lookup-api-v1:createMinecraftArtifacts
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.06s
+
+
+> Task :fabric-api-lookup-api-v1:generateImplPackageInfos
+> Task :fabric-api-lookup-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-lifecycle-events-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-lifecycle-events-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-advancement-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-biome-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-biome-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-lifecycle-events-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.53s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.21s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.21s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 4.58s
+
+
+> Task :fabric-lifecycle-events-v1:generateImplPackageInfos
+> Task :fabric-lifecycle-events-v1:generateForgeModEntrypoint
+
+> Task :fabric-block-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-block-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-lifecycle-events-v1:compileJava FROM-CACHE
+
+> Task :fabric-biome-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.02s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.12s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.12s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ ↳ Running external tool net.neoforged.installertools:installertools:4.0.12:fatjar
+
+> Task :fabric-api-lookup-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-block-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.83s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.12s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.12s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.69s
+
+
+> Task :fabric-block-api-v1:generateImplPackageInfos
+> Task :fabric-block-api-v1:generateForgeModEntrypoint
+
+> Task :createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mapplyDevTransforms[23;0m in 8.48s
+Total runtime: 15.12s
+
+
+> Task :fabric-block-getter-api-v2:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-block-getter-api-v2/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-block-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-client-gametest-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-client-gametest-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+
+> Task :fabric-block-getter-api-v2:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.14s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.13s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.14s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.94s
+
+
+> Task :fabric-block-getter-api-v2:generateImplPackageInfos
+> Task :fabric-block-getter-api-v2:generateForgeModEntrypoint
+
+> Task :fabric-networking-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-networking-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.
+> Task :fabric-block-getter-api-v2:compileJava FROM-CACHE
+
+> Task :fabric-client-gametest-api-v1:createMinecraftArtifacts
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.72s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.07s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.07s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.77s
+
+
+> Task :fabric-client-gametest-api-v1:generateImplPackageInfos
+> Task :fabric-client-gametest-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-biome-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mapplyDevTransforms[23;0m in 7.46s
+Total runtime: 10.78s
+
+
+> Task :fabric-networking-api-v1:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.03s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.13s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.13s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+
+> Task :fabric-biome-api-v1:generateImplPackageInfos
+> Task :fabric-biome-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-command-api-v2:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-command-api-v2/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-networking-api-v1:createMinecraftArtifacts
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.01s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.01s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.88s
+
+
+> Task :fabric-networking-api-v1:generateImplPackageInfos
+> Task :fabric-networking-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-content-registries-v0:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-content-registries-v0/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-command-api-v2:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.74s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.06s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.06s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.62s
+
+
+> Task :fabric-command-api-v2:generateImplPackageInfos
+> Task :fabric-command-api-v2:generateForgeModEntrypoint
+> Task :fabric-networking-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-content-registries-v0:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.74s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.11s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.12s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.64s
+
+
+> Task :fabric-content-registries-v0:generateImplPackageInfos
+> Task :fabric-content-registries-v0:generateForgeModEntrypoint
+> Task :fabric-command-api-v2:compileJava FROM-CACHE
+> Task :fabric-client-gametest-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-item-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-item-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.99s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.11s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.11s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.14s
+
+
+> Task :fabric-item-api-v1:generateImplPackageInfos
+
+> Task :fabric-biome-api-v1:compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :fabric-item-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-convention-tags-v2:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-convention-tags-v2/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.85s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.09s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.09s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.56s
+
+
+> Task :fabric-creative-tab-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-creative-tab-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be...
+> Task :fabric-convention-tags-v2:generateImplPackageInfos
+> Task :fabric-convention-tags-v2:generateForgeModEntrypoint
+> Task :fabric-item-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-creative-tab-api-v1:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.91s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.12s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.12s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 4.87s
+
+
+> Task :fabric-creative-tab-api-v1:generateImplPackageInfos
+> Task :fabric-creative-tab-api-v1:generateForgeModEntrypoint
+> Task :fabric-convention-tags-v2:compileJava FROM-CACHE
+> Task :fabric-content-registries-v0:compileJava FROM-CACHE
+> Task :fabric-creative-tab-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-data-attachment-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-data-attachment-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.71s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.07s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.07s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mdecompile[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mdecompile[23;0m in 0.00s
+[1m*** Started working on [4mpatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpatch[23;0m in 0.00s
+[1m*** Started working on [4mapplyNeoforgePatches[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyNeoforgePatches[23;0m in 0.00s
+[1m*** Started working on [4mtransformSources[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mtransformSources[23;0m in 0.00s
+[1m*** Started working on [4mrecompile[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mrecompile[23;0m in 0.00s
+[1m*** Started working on [4mmergeWithSources[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mmergeWithSources[23;0m in 0.00s
+Total runtime: 2.53s
+
+
+> Task :fabric-entity-events-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-entity-events-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be...
+> Task :fabric-data-attachment-api-v1:generateImplPackageInfos
+> Task :fabric-data-attachment-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-object-builder-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-object-builder-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be...
+> Task :fabric-registry-sync-v0:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-registry-sync-v0/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.55s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.05s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.05s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 1.86s
+
+
+> Task :fabric-registry-sync-v0:generateImplPackageInfos
+> Task :fabric-registry-sync-v0:generateForgeModEntrypoint
+> Task :fabric-registry-sync-v0:compileJava FROM-CACHE
+
+> Task :fabric-entity-events-v1:createMinecraftArtifacts
+...  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 3.62s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.07s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.07s
+
+> Task :fabric-object-builder-api-v1:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.72s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.06s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.01s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mdecompile[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mdecompile[23;0m in 0.01s
+[1m*** Started working on [4mpatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpatch[23;0m in 0.00s
+[1m*** Started working on [4mapplyNeoforgePatches[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyNeoforgePatches[23;0m in 0.00s
+[1m*** Started working on [4mtransformSources[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mtransformSources[23;0m in 0.00s
+[1m*** Started working on [4mrecompile[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mrecompile[23;0m in 0.00s
+[1m*** Started working on [4mmergeWithSources[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mmergeWithSources[23;0m in 0.00s
+Total runtime: 4.48s
+
+
+> Task :fabric-object-builder-api-v1:generateImplPackageInfos
+> Task :fabric-object-builder-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-data-generation-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-data-generation-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be...
+> Task :fabric-entity-events-v1:createMinecraftArtifacts
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 5.45s
+
+
+> Task :fabric-entity-events-v1:generateImplPackageInfos
+> Task :fabric-entity-events-v1:generateForgeModEntrypoint
+
+> Task :fabric-recipe-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-recipe-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-entity-events-v1:compileJava FROM-CACHE
+
+> Task :fabric-object-builder-api-v1:compileJava
+Note: /home/runner/work/Connector/Connector/ffapi/fabric-object-builder-api-v1/src/main/java/net/fabricmc/fabric/impl/object/builder/FabricEntityTypeImpl.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+Note: /home/runner/work/Connector/Connector/ffapi/fabric-object-builder-api-v1/src/main/java/net/fabricmc/fabric/mixin/object/builder/EntityTypeBuilderMixin.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :fabric-data-generation-api-v1:createMinecraftArtifacts
+...  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-recipe-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.80s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.00s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.10s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.28s
+
+
+> Task :fabric-recipe-api-v1:generateImplPackageInfos
+> Task :fabric-recipe-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-resource-conditions-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-resource-conditions-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.
+> Task :fabric-recipe-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-data-generation-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 4.84s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.08s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.08s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ ↳ Running external tool net.neoforged.installertools:installertools:4.0.12:fatjar
+
+> Task :fabric-data-attachment-api-v1:compileJava
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+
+> Task :fabric-resource-conditions-api-v1:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.19s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.13s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.13s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 4.00s
+
+
+> Task :fabric-resource-conditions-api-v1:generateImplPackageInfos
+> Task :fabric-resource-conditions-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-tag-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-tag-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.95s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.13s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.14s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+
+> Task :fabric-resource-conditions-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-debug-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-debug-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+
+> Task :fabric-tag-api-v1:createMinecraftArtifacts
+Total runtime: 2.87s
+
+
+> Task :fabric-tag-api-v1:generateImplPackageInfos
+> Task :fabric-tag-api-v1:generateForgeModEntrypoint
+> Task :fabric-tag-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-debug-api-v1:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.92s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.11s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.11s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.83s
+
+
+> Task :fabric-debug-api-v1:generateImplPackageInfos
+> Task :fabric-debug-api-v1:generateForgeModEntrypoint
+> Task :fabric-debug-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-dimensions-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-dimensions-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.90s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.14s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.15s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.73s
+
+
+> Task :fabric-dimensions-v1:generateImplPackageInfos
+> Task :fabric-dimensions-v1:generateForgeModEntrypoint
+> Task :fabric-dimensions-v1:compileJava FROM-CACHE
+
+> Task :fabric-data-generation-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mapplyDevTransforms[23;0m in 8.23s
+Total runtime: 14.23s
+
+
+> Task :fabric-events-interaction-v0:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-events-interaction-v0/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-data-generation-api-v1:generateImplPackageInfos
+> Task :fabric-data-generation-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-game-rule-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-game-rule-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-events-interaction-v0:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.73s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.11s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.11s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.55s
+
+
+> Task :fabric-events-interaction-v0:generateImplPackageInfos
+> Task :fabric-events-interaction-v0:generateForgeModEntrypoint
+> Task :fabric-events-interaction-v0:compileJava FROM-CACHE
+> Task :fabric-data-generation-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-gametest-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-gametest-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-game-rule-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.81s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.00s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.11s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.58s
+
+
+> Task :fabric-game-rule-api-v1:generateImplPackageInfos
+> Task :fabric-game-rule-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-key-mapping-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-key-mapping-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-gametest-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.89s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.13s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.12s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.71s
+
+
+> Task :fabric-gametest-api-v1:generateImplPackageInfos
+> Task :fabric-gametest-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-loot-api-v3:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-loot-api-v3/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.
+> Task :fabric-game-rule-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-key-mapping-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.86s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.06s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.06s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.35s
+
+
+> Task :fabric-key-mapping-api-v1:generateImplPackageInfos
+> Task :fabric-key-mapping-api-v1:generateForgeModEntrypoint
+> Task :fabric-key-mapping-api-v1:compileJava FROM-CACHE
+> Task :fabric-gametest-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-loot-api-v3:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.89s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.10s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.10s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.47s
+
+
+> Task :fabric-loot-api-v3:generateImplPackageInfos
+> Task :fabric-loot-api-v3:generateForgeModEntrypoint
+
+> Task :fabric-menu-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-menu-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be...
+> Task :fabric-loot-api-v3:compileJava FROM-CACHE
+
+> Task :fabric-message-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-message-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.52s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.04s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.04s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 1.66s
+
+
+> Task :fabric-message-api-v1:generateImplPackageInfos
+> Task :fabric-message-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-model-loading-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-model-loading-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.
+> Task :fabric-message-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-menu-api-v1:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.67s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.08s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.09s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 4.24s
+
+
+> Task :fabric-menu-api-v1:generateImplPackageInfos
+> Task :fabric-menu-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-renderer-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-renderer-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-model-loading-api-v1:createMinecraftArtifacts
+..  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.71s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.07s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.07s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.92s
+
+
+> Task :fabric-model-loading-api-v1:generateImplPackageInfos
+
+> Task :fabric-rendering-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-rendering-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.
+> Task :fabric-model-loading-api-v1:generateForgeModEntrypoint
+> Task :fabric-menu-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-renderer-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.63s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.07s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.07s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ ↳ Running external tool net.neoforged.installertools:installertools:4.0.12:fatjar
+
+> Task :fabric-particles-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-particles-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be...  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.96s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.14s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.14s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 5.08s
+
+
+> Task :fabric-particles-v1:generateImplPackageInfos
+> Task :fabric-particles-v1:generateForgeModEntrypoint
+
+> Task :fabric-rendering-v1:createMinecraftArtifacts
+..  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 3.05s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.04s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.04s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mdecompile[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mdecompile[23;0m in 0.00s
+[1m*** Started working on [4mpatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpatch[23;0m in 0.00s
+[1m*** Started working on [4mapplyNeoforgePatches[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyNeoforgePatches[23;0m in 0.00s
+[1m*** Started working on [4mtransformSources[23;0m[23;0m
+  [33mWARNING: [23;0morg.jspecify:jspecify:1.0.0 is not present in the artifact manifest
+ ↳ Running external tool net.neoforged.jst:jst-cli-bundle:2.0.11
+
+> Task :fabric-particles-v1:compileJava FROM-CACHE
+
+> Task :fabric-transitive-access-wideners-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-transitive-access-wideners-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.97s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.10s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.10s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ ↳ Running external tool net.neoforged.installertools:installertools:4.0.12:fatjar
+
+> Task :fabric-renderer-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mapplyDevTransforms[23;0m in 6.99s
+Total runtime: 10.17s
+
+
+> Task :fabric-renderer-api-v1:generateImplPackageInfos
+> Task :fabric-renderer-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-permission-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-permission-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.09s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.06s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.07s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.01s
+Total runtime: 2.84s
+
+
+> Task :fabric-transitive-access-wideners-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mapplyDevTransforms[23;0m in 7.10s
+
+> Task :fabric-permission-api-v1:generateImplPackageInfos
+> Task :fabric-permission-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-renderer-indigo:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-renderer-indigo/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.
+> Task :fabric-transitive-access-wideners-v1:createMinecraftArtifacts
+Total runtime: 10.67s
+
+
+> Task :fabric-transitive-access-wideners-v1:generateImplPackageInfos NO-SOURCE
+> Task :fabric-transitive-access-wideners-v1:generateForgeModEntrypoint NO-SOURCE
+> Task :fabric-transitive-access-wideners-v1:compileJava NO-SOURCE
+> Task :fabric-permission-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-renderer-indigo:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.17s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.14s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.14s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.01s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 4.82s
+
+
+> Task :fabric-renderer-indigo:generateImplPackageInfos
+> Task :fabric-renderer-indigo:generateForgeModEntrypoint
+
+> Task :fabric-rendering-fluids-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-rendering-fluids-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.39s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.14s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.14s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.01s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.02s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 4.01s
+
+
+> Task :fabric-rendering-fluids-v1:generateImplPackageInfos
+> Task :fabric-rendering-fluids-v1:generateForgeModEntrypoint
+
+> Task :fabric-screen-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-screen-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.33s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.17s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.17s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.99s
+
+
+> Task :fabric-screen-api-v1:generateImplPackageInfos
+
+> Task :fabric-serialization-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-serialization-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be.  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+
+> Task :fabric-screen-api-v1:generateForgeModEntrypoint
+> Task :fabric-screen-api-v1:compileJava FROM-CACHE
+> Task :fabric-rendering-fluids-v1:compileJava FROM-CACHE
+
+> Task :fabric-serialization-api-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 2.46s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.18s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.18s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 5.15s
+
+
+> Task :fabric-serialization-api-v1:generateImplPackageInfos
+> Task :fabric-serialization-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-sound-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-sound-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+Waiting for lock on downloadManifest_271487b88a13cbe35ef8f66d7fe7972b4b9fd6be...
+> Task :fabric-serialization-api-v1:compileJava FROM-CACHE
+
+> Task :fabric-transfer-api-v1:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/fabric-transfer-api-v1/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.31s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.13s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.13s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.62s
+
+
+> Task :fabric-transfer-api-v1:generateImplPackageInfos
+> Task :fabric-transfer-api-v1:generateForgeModEntrypoint
+
+> Task :fabric-sound-api-v1:createMinecraftArtifacts
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 3.30s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.19s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.19s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 6.31s
+
+
+> Task :fabric-transfer-api-v1:compileJava FROM-CACHE
+
+> Task :deprecated:fabric-resource-loader-v0:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/deprecated/fabric-resource-loader-v0/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.97s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.11s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.12s
+
+> Task :fabric-sound-api-v1:generateImplPackageInfos
+> Task :fabric-sound-api-v1:generateForgeModEntrypoint
+
+> Task :deprecated:fabric-resource-loader-v0:createMinecraftArtifacts
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 3.76s
+
+
+> Task :deprecated:fabric-resource-loader-v0:generateImplPackageInfos
+> Task :deprecated:fabric-resource-loader-v0:generateForgeModEntrypoint
+> Task :deprecated:fabric-resource-loader-v0:compileJava FROM-CACHE
+> Task :generateModMetadata
+> Task :processResources
+> Task :fabric-advancement-api-v1:generateModMetadata
+> Task :fabric-advancement-api-v1:processResources
+> Task :fabric-advancement-api-v1:classes
+> Task :fabric-advancement-api-v1:jarJar NO-SOURCE
+> Task :fabric-advancement-api-v1:jar
+> Task :fabric-api-base:generateAccessTransformer
+> Task :fabric-api-base:generateInjectedInterfaces
+> Task :fabric-api-base:generateModMetadata
+> Task :fabric-api-base:processResources
+> Task :fabric-api-base:classes
+> Task :fabric-api-base:jarJar NO-SOURCE
+> Task :fabric-api-base:jar
+> Task :fabric-api-lookup-api-v1:generateAccessTransformer
+> Task :fabric-api-lookup-api-v1:generateInjectedInterfaces
+> Task :fabric-api-lookup-api-v1:generateModMetadata
+> Task :fabric-api-lookup-api-v1:processResources
+> Task :fabric-api-lookup-api-v1:classes
+> Task :fabric-api-lookup-api-v1:jarJar NO-SOURCE
+> Task :fabric-api-lookup-api-v1:jar
+> Task :fabric-biome-api-v1:generateInjectedInterfaces
+> Task :fabric-biome-api-v1:generateModMetadata
+> Task :fabric-biome-api-v1:processResources
+> Task :fabric-biome-api-v1:classes
+> Task :fabric-biome-api-v1:jarJar NO-SOURCE
+> Task :fabric-biome-api-v1:jar
+> Task :fabric-block-api-v1:generateModMetadata
+> Task :fabric-block-api-v1:processResources
+> Task :fabric-block-api-v1:classes
+> Task :fabric-block-api-v1:jarJar NO-SOURCE
+> Task :fabric-block-api-v1:jar
+> Task :fabric-block-getter-api-v2:generateModMetadata
+> Task :fabric-block-getter-api-v2:processResources
+> Task :fabric-block-getter-api-v2:classes
+> Task :fabric-block-getter-api-v2:jarJar NO-SOURCE
+> Task :fabric-block-getter-api-v2:jar
+> Task :fabric-client-gametest-api-v1:generateInjectedInterfaces
+> Task :fabric-client-gametest-api-v1:generateModMetadata
+
+> Task :internal:ffapi-fluid-types:createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/ffapi/internal/ffapi-fluid-types/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+
+> Task :fabric-client-gametest-api-v1:processResources
+> Task :fabric-client-gametest-api-v1:classes
+> Task :fabric-client-gametest-api-v1:jarJar NO-SOURCE
+> Task :fabric-client-gametest-api-v1:jar
+> Task :fabric-command-api-v2:generateModMetadata
+> Task :fabric-command-api-v2:processResources
+> Task :fabric-command-api-v2:classes
+> Task :fabric-command-api-v2:jarJar NO-SOURCE
+> Task :fabric-command-api-v2:jar
+> Task :fabric-content-registries-v0:generateModMetadata
+> Task :fabric-content-registries-v0:processResources
+> Task :fabric-content-registries-v0:classes
+> Task :fabric-content-registries-v0:jarJar NO-SOURCE
+> Task :fabric-content-registries-v0:jar
+> Task :fabric-convention-tags-v2:generateModMetadata
+> Task :fabric-sound-api-v1:compileJava FROM-CACHE
+> Task :fabric-creative-tab-api-v1:generateModMetadata
+> Task :fabric-creative-tab-api-v1:processResources
+> Task :fabric-creative-tab-api-v1:classes
+> Task :fabric-creative-tab-api-v1:jarJar NO-SOURCE
+> Task :fabric-creative-tab-api-v1:jar
+> Task :fabric-data-attachment-api-v1:generateModMetadata
+> Task :fabric-data-attachment-api-v1:processResources
+> Task :fabric-data-attachment-api-v1:classes
+> Task :fabric-data-attachment-api-v1:jarJar NO-SOURCE
+> Task :fabric-data-attachment-api-v1:jar
+> Task :fabric-data-generation-api-v1:generateModMetadata
+> Task :fabric-data-generation-api-v1:processResources
+> Task :fabric-data-generation-api-v1:classes
+> Task :fabric-data-generation-api-v1:jarJar NO-SOURCE
+> Task :fabric-data-generation-api-v1:jar
+> Task :fabric-debug-api-v1:generateInjectedInterfaces
+> Task :fabric-debug-api-v1:generateModMetadata
+> Task :fabric-debug-api-v1:processResources
+> Task :fabric-debug-api-v1:classes
+> Task :fabric-debug-api-v1:jarJar NO-SOURCE
+> Task :fabric-debug-api-v1:jar
+> Task :fabric-dimensions-v1:generateAccessTransformer
+> Task :fabric-dimensions-v1:generateInjectedInterfaces
+> Task :fabric-dimensions-v1:generateModMetadata
+> Task :fabric-dimensions-v1:processResources
+> Task :fabric-dimensions-v1:classes
+> Task :fabric-dimensions-v1:jarJar NO-SOURCE
+> Task :fabric-dimensions-v1:jar
+> Task :fabric-entity-events-v1:generateModMetadata
+> Task :fabric-entity-events-v1:processResources
+> Task :fabric-entity-events-v1:classes
+> Task :fabric-entity-events-v1:jarJar NO-SOURCE
+> Task :fabric-entity-events-v1:jar
+> Task :fabric-events-interaction-v0:generateAccessTransformer
+> Task :fabric-convention-tags-v2:processResources
+> Task :fabric-convention-tags-v2:classes
+> Task :fabric-events-interaction-v0:generateInjectedInterfaces
+> Task :fabric-convention-tags-v2:jarJar NO-SOURCE
+> Task :fabric-events-interaction-v0:generateModMetadata
+> Task :fabric-events-interaction-v0:processResources
+> Task :fabric-events-interaction-v0:classes
+> Task :fabric-events-interaction-v0:jarJar NO-SOURCE
+> Task :fabric-events-interaction-v0:jar
+> Task :fabric-game-rule-api-v1:generateInjectedInterfaces
+> Task :fabric-game-rule-api-v1:generateModMetadata
+> Task :fabric-game-rule-api-v1:processResources
+> Task :fabric-game-rule-api-v1:classes
+> Task :fabric-game-rule-api-v1:jarJar NO-SOURCE
+> Task :fabric-game-rule-api-v1:jar
+> Task :fabric-gametest-api-v1:generateInjectedInterfaces
+> Task :fabric-gametest-api-v1:generateModMetadata
+> Task :fabric-convention-tags-v2:jar
+> Task :fabric-item-api-v1:generateModMetadata
+> Task :fabric-gametest-api-v1:processResources
+> Task :fabric-gametest-api-v1:classes
+> Task :fabric-gametest-api-v1:jarJar NO-SOURCE
+> Task :fabric-item-api-v1:processResources
+> Task :fabric-item-api-v1:classes
+> Task :fabric-item-api-v1:jarJar NO-SOURCE
+> Task :fabric-gametest-api-v1:jar
+> Task :fabric-key-mapping-api-v1:generateAccessTransformer
+> Task :fabric-key-mapping-api-v1:generateInjectedInterfaces
+> Task :fabric-key-mapping-api-v1:generateModMetadata
+> Task :fabric-item-api-v1:jar
+> Task :fabric-key-mapping-api-v1:processResources
+> Task :fabric-key-mapping-api-v1:classes
+> Task :fabric-key-mapping-api-v1:jarJar NO-SOURCE
+> Task :fabric-lifecycle-events-v1:generateModMetadata
+> Task :fabric-key-mapping-api-v1:jar
+> Task :fabric-lifecycle-events-v1:processResources
+> Task :fabric-lifecycle-events-v1:classes
+> Task :fabric-lifecycle-events-v1:jarJar NO-SOURCE
+> Task :fabric-loot-api-v3:generateModMetadata
+> Task :fabric-loot-api-v3:processResources
+> Task :fabric-loot-api-v3:classes
+> Task :fabric-loot-api-v3:jarJar NO-SOURCE
+> Task :fabric-lifecycle-events-v1:jar
+> Task :fabric-loot-api-v3:jar
+> Task :fabric-menu-api-v1:generateModMetadata
+> Task :fabric-message-api-v1:generateAccessTransformer
+> Task :fabric-message-api-v1:generateInjectedInterfaces
+> Task :fabric-menu-api-v1:processResources
+> Task :fabric-menu-api-v1:classes
+> Task :fabric-message-api-v1:generateModMetadata
+> Task :fabric-menu-api-v1:jarJar NO-SOURCE
+> Task :fabric-message-api-v1:processResources
+> Task :fabric-message-api-v1:classes
+> Task :fabric-message-api-v1:jarJar NO-SOURCE
+> Task :fabric-menu-api-v1:jar
+> Task :fabric-model-loading-api-v1:generateModMetadata
+> Task :fabric-model-loading-api-v1:processResources
+> Task :fabric-message-api-v1:jar
+> Task :fabric-model-loading-api-v1:jarJar NO-SOURCE
+> Task :fabric-networking-api-v1:generateModMetadata
+> Task :fabric-object-builder-api-v1:generateModMetadata
+> Task :fabric-object-builder-api-v1:processResources
+> Task :fabric-object-builder-api-v1:classes
+> Task :fabric-object-builder-api-v1:jarJar NO-SOURCE
+> Task :fabric-networking-api-v1:processResources
+> Task :fabric-networking-api-v1:classes
+> Task :fabric-networking-api-v1:jarJar NO-SOURCE
+> Task :fabric-object-builder-api-v1:jar
+> Task :fabric-particles-v1:generateModMetadata
+> Task :fabric-particles-v1:processResources
+> Task :fabric-particles-v1:classes
+> Task :fabric-particles-v1:jarJar NO-SOURCE
+> Task :fabric-networking-api-v1:jar
+> Task :fabric-permission-api-v1:generateModMetadata
+> Task :fabric-particles-v1:jar
+> Task :fabric-permission-api-v1:processResources
+> Task :fabric-permission-api-v1:classes
+> Task :fabric-recipe-api-v1:generateModMetadata
+> Task :fabric-permission-api-v1:jarJar NO-SOURCE
+> Task :fabric-recipe-api-v1:processResources
+> Task :fabric-recipe-api-v1:classes
+> Task :fabric-recipe-api-v1:jarJar NO-SOURCE
+> Task :fabric-permission-api-v1:jar
+> Task :fabric-recipe-api-v1:jar
+> Task :fabric-registry-sync-v0:generateModMetadata
+> Task :fabric-renderer-api-v1:generateModMetadata
+> Task :fabric-renderer-api-v1:processResources
+> Task :fabric-renderer-api-v1:jarJar NO-SOURCE
+> Task :fabric-renderer-indigo:generateInjectedInterfaces
+> Task :fabric-registry-sync-v0:processResources
+> Task :fabric-registry-sync-v0:classes
+> Task :fabric-registry-sync-v0:jarJar NO-SOURCE
+> Task :fabric-renderer-indigo:generateModMetadata
+> Task :fabric-renderer-indigo:processResources
+> Task :fabric-renderer-indigo:jarJar NO-SOURCE
+> Task :fabric-rendering-fluids-v1:generateInjectedInterfaces
+> Task :fabric-registry-sync-v0:jar
+> Task :fabric-resource-conditions-api-v1:generateInjectedInterfaces
+> Task :fabric-rendering-fluids-v1:generateModMetadata
+> Task :fabric-resource-conditions-api-v1:generateModMetadata
+> Task :fabric-rendering-fluids-v1:processResources
+> Task :fabric-rendering-fluids-v1:classes
+> Task :fabric-resource-conditions-api-v1:processResources
+> Task :fabric-resource-conditions-api-v1:classes
+> Task :fabric-rendering-fluids-v1:jarJar NO-SOURCE
+> Task :fabric-resource-conditions-api-v1:jarJar NO-SOURCE
+> Task :fabric-rendering-fluids-v1:jar
+> Task :fabric-resource-conditions-api-v1:jar
+> Task :fabric-screen-api-v1:generateAccessTransformer
+> Task :fabric-screen-api-v1:generateInjectedInterfaces
+> Task :fabric-screen-api-v1:generateModMetadata
+> Task :fabric-screen-api-v1:processResources
+> Task :fabric-screen-api-v1:classes
+> Task :fabric-screen-api-v1:jarJar NO-SOURCE
+> Task :fabric-resource-loader-v1:generateModMetadata
+> Task :fabric-screen-api-v1:jar
+> Task :fabric-serialization-api-v1:generateModMetadata
+> Task :fabric-serialization-api-v1:processResources
+> Task :fabric-serialization-api-v1:classes
+> Task :fabric-serialization-api-v1:jarJar NO-SOURCE
+> Task :fabric-resource-loader-v1:processResources
+> Task :fabric-resource-loader-v1:classes
+> Task :fabric-resource-loader-v1:jarJar NO-SOURCE
+> Task :fabric-serialization-api-v1:jar
+> Task :fabric-sound-api-v1:generateModMetadata
+> Task :fabric-resource-loader-v1:jar
+> Task :fabric-sound-api-v1:processResources
+> Task :fabric-sound-api-v1:classes
+> Task :fabric-sound-api-v1:jarJar NO-SOURCE
+> Task :fabric-tag-api-v1:generateModMetadata
+> Task :fabric-sound-api-v1:jar
+> Task :fabric-transfer-api-v1:generateAccessTransformer
+> Task :fabric-transfer-api-v1:generateInjectedInterfaces
+> Task :fabric-tag-api-v1:processResources
+> Task :fabric-tag-api-v1:classes
+> Task :fabric-tag-api-v1:jarJar NO-SOURCE
+> Task :fabric-transfer-api-v1:generateModMetadata
+> Task :fabric-transfer-api-v1:processResources
+> Task :fabric-transfer-api-v1:classes
+> Task :fabric-transfer-api-v1:jarJar NO-SOURCE
+> Task :fabric-tag-api-v1:jar
+> Task :fabric-transitive-access-wideners-v1:generateInjectedInterfaces
+> Task :fabric-transitive-access-wideners-v1:generateModMetadata
+> Task :fabric-transitive-access-wideners-v1:processResources
+> Task :fabric-transitive-access-wideners-v1:classes
+> Task :fabric-transitive-access-wideners-v1:jarJar NO-SOURCE
+> Task :fabric-transfer-api-v1:jar
+> Task :deprecated:fabric-resource-loader-v0:generateAccessTransformer
+> Task :deprecated:fabric-resource-loader-v0:generateInjectedInterfaces
+> Task :fabric-transitive-access-wideners-v1:jar
+> Task :sourcesJar
+> Task :deprecated:fabric-resource-loader-v0:generateModMetadata
+> Task :deprecated:fabric-resource-loader-v0:processResources
+> Task :deprecated:fabric-resource-loader-v0:classes
+> Task :deprecated:fabric-resource-loader-v0:jarJar NO-SOURCE
+> Task :deprecated:fabric-resource-loader-v0:jar
+> Task :deprecated:generatePomFileForMavenJavaPublication
+> Task :deprecated:publishMavenJavaPublicationToMavenLocal
+> Task :deprecated:publishToMavenLocal
+> Task :fabric-advancement-api-v1:sourcesJar
+> Task :fabric-advancement-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-advancement-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-advancement-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-advancement-api-v1:publishToMavenLocal
+> Task :fabric-api-base:sourcesJar
+> Task :fabric-api-base:generateMetadataFileForMavenJavaPublication
+> Task :fabric-api-base:generatePomFileForMavenJavaPublication
+> Task :fabric-api-base:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-api-base:publishToMavenLocal
+
+> Task :internal:ffapi-fluid-types:createMinecraftArtifacts
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 1.02s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.01s
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.08s
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.08s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.01s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.00s
+Total runtime: 2.65s
+
+
+> Task :internal:ffapi-fluid-types:generateImplPackageInfos
+
+> Task :fabric-rendering-v1:createMinecraftArtifacts
+ [1m[92m✓[23;0m Completed [4mtransformSources[23;0m in 28.73s
+[1m*** Started working on [4mrecompile[23;0m[23;0m
+ 97 items on the compile classpath
+ 1 items on the sourcepath
+
+> Task :internal:ffapi-fluid-types:compileJava FROM-CACHE
+> Task :internal:ffapi-fluid-types:generateAccessTransformer
+> Task :internal:ffapi-fluid-types:generateInjectedInterfaces
+> Task :internal:ffapi-fluid-types:generateModMetadata
+> Task :internal:ffapi-fluid-types:processResources
+> Task :internal:ffapi-fluid-types:classes
+> Task :internal:ffapi-fluid-types:jarJar NO-SOURCE
+> Task :internal:ffapi-fluid-types:jar
+> Task :fabric-api-catalog:configureCatalog UP-TO-DATE
+> Task :fabric-api-catalog:generateCatalogAsToml
+> Task :fabric-api-catalog:generateMetadataFileForMavenJavaPublication
+> Task :fabric-api-catalog:generatePomFileForMavenJavaPublication
+> Task :fabric-api-catalog:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-api-catalog:publishToMavenLocal
+> Task :fabric-api-lookup-api-v1:sourcesJar
+> Task :fabric-api-lookup-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-api-lookup-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-api-lookup-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-api-lookup-api-v1:publishToMavenLocal
+> Task :fabric-biome-api-v1:sourcesJar
+> Task :fabric-biome-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-biome-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-biome-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-biome-api-v1:publishToMavenLocal
+> Task :fabric-block-api-v1:sourcesJar
+> Task :fabric-block-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-block-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-block-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-block-api-v1:publishToMavenLocal
+> Task :fabric-block-getter-api-v2:sourcesJar
+> Task :fabric-block-getter-api-v2:generateMetadataFileForMavenJavaPublication
+> Task :fabric-block-getter-api-v2:generatePomFileForMavenJavaPublication
+> Task :fabric-block-getter-api-v2:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-block-getter-api-v2:publishToMavenLocal
+> Task :fabric-client-gametest-api-v1:sourcesJar
+> Task :fabric-client-gametest-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-client-gametest-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-client-gametest-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-client-gametest-api-v1:publishToMavenLocal
+> Task :fabric-command-api-v2:sourcesJar
+> Task :fabric-command-api-v2:generateMetadataFileForMavenJavaPublication
+> Task :fabric-command-api-v2:generatePomFileForMavenJavaPublication
+> Task :fabric-command-api-v2:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-command-api-v2:publishToMavenLocal
+> Task :fabric-content-registries-v0:sourcesJar
+> Task :fabric-content-registries-v0:generateMetadataFileForMavenJavaPublication
+> Task :fabric-content-registries-v0:generatePomFileForMavenJavaPublication
+> Task :fabric-content-registries-v0:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-content-registries-v0:publishToMavenLocal
+> Task :fabric-convention-tags-v2:sourcesJar
+> Task :fabric-convention-tags-v2:generateMetadataFileForMavenJavaPublication
+> Task :fabric-convention-tags-v2:generatePomFileForMavenJavaPublication
+> Task :fabric-convention-tags-v2:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-convention-tags-v2:publishToMavenLocal
+> Task :fabric-creative-tab-api-v1:sourcesJar
+> Task :fabric-creative-tab-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-creative-tab-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-creative-tab-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-creative-tab-api-v1:publishToMavenLocal
+> Task :fabric-data-attachment-api-v1:sourcesJar
+> Task :fabric-data-attachment-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-data-attachment-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-data-attachment-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-data-attachment-api-v1:publishToMavenLocal
+> Task :fabric-data-generation-api-v1:sourcesJar
+> Task :fabric-data-generation-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-data-generation-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-data-generation-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-data-generation-api-v1:publishToMavenLocal
+> Task :fabric-debug-api-v1:sourcesJar
+> Task :fabric-debug-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-debug-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-debug-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-debug-api-v1:publishToMavenLocal
+> Task :fabric-dimensions-v1:sourcesJar
+> Task :fabric-dimensions-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-dimensions-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-dimensions-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-dimensions-v1:publishToMavenLocal
+> Task :fabric-entity-events-v1:sourcesJar
+> Task :fabric-entity-events-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-entity-events-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-entity-events-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-entity-events-v1:publishToMavenLocal
+> Task :fabric-events-interaction-v0:sourcesJar
+> Task :fabric-events-interaction-v0:generateMetadataFileForMavenJavaPublication
+> Task :fabric-events-interaction-v0:generatePomFileForMavenJavaPublication
+> Task :fabric-events-interaction-v0:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-events-interaction-v0:publishToMavenLocal
+> Task :fabric-game-rule-api-v1:sourcesJar
+> Task :fabric-game-rule-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-game-rule-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-game-rule-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-game-rule-api-v1:publishToMavenLocal
+> Task :fabric-gametest-api-v1:sourcesJar
+> Task :fabric-gametest-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-gametest-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-gametest-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-gametest-api-v1:publishToMavenLocal
+> Task :fabric-item-api-v1:sourcesJar
+> Task :fabric-item-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-item-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-item-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-item-api-v1:publishToMavenLocal
+> Task :fabric-key-mapping-api-v1:sourcesJar
+> Task :fabric-key-mapping-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-key-mapping-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-key-mapping-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-key-mapping-api-v1:publishToMavenLocal
+> Task :fabric-lifecycle-events-v1:sourcesJar
+> Task :fabric-lifecycle-events-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-lifecycle-events-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-lifecycle-events-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-lifecycle-events-v1:publishToMavenLocal
+> Task :fabric-loot-api-v3:sourcesJar
+> Task :fabric-loot-api-v3:generateMetadataFileForMavenJavaPublication
+> Task :fabric-loot-api-v3:generatePomFileForMavenJavaPublication
+> Task :fabric-loot-api-v3:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-loot-api-v3:publishToMavenLocal
+> Task :fabric-menu-api-v1:sourcesJar
+> Task :fabric-menu-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-menu-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-menu-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-menu-api-v1:publishToMavenLocal
+> Task :fabric-message-api-v1:sourcesJar
+> Task :fabric-message-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-message-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-message-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-message-api-v1:publishToMavenLocal
+> Task :fabric-model-loading-api-v1:sourcesJar
+> Task :fabric-model-loading-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-networking-api-v1:sourcesJar
+> Task :fabric-networking-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-networking-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-networking-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-networking-api-v1:publishToMavenLocal
+> Task :fabric-object-builder-api-v1:sourcesJar
+> Task :fabric-object-builder-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-object-builder-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-object-builder-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-object-builder-api-v1:publishToMavenLocal
+> Task :fabric-particles-v1:sourcesJar
+> Task :fabric-particles-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-particles-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-particles-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-particles-v1:publishToMavenLocal
+> Task :fabric-permission-api-v1:sourcesJar
+> Task :fabric-permission-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-permission-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-permission-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-permission-api-v1:publishToMavenLocal
+> Task :fabric-recipe-api-v1:sourcesJar
+> Task :fabric-recipe-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-recipe-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-recipe-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-recipe-api-v1:publishToMavenLocal
+> Task :fabric-registry-sync-v0:sourcesJar
+> Task :fabric-registry-sync-v0:generateMetadataFileForMavenJavaPublication
+> Task :fabric-registry-sync-v0:generatePomFileForMavenJavaPublication
+> Task :fabric-registry-sync-v0:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-registry-sync-v0:publishToMavenLocal
+> Task :fabric-renderer-api-v1:sourcesJar
+
+> Task :fabric-rendering-v1:createMinecraftArtifacts
+ Compiling 7301 source files
+
+> Task :generatePomFileForMavenJavaPublication
+> Task :fabric-api-bom:generateMetadataFileForMavenJavaPublication
+> Task :fabric-renderer-api-v1:generatePomFileForMavenJavaPublication
+
+> Task :fabric-rendering-v1:createMinecraftArtifacts
+Copied 21494 resource files
+ [1m[92m✓[23;0m Completed [4mrecompile[23;0m in 52.01s
+[1m*** Started working on [4mmergeWithSources[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mmergeWithSources[23;0m in 3.51s
+Total runtime: 88.69s
+
+
+> Task :fabric-rendering-v1:generateImplPackageInfos
+> Task :fabric-rendering-v1:generateForgeModEntrypoint
+> Task :fabric-rendering-v1:compileJava FROM-CACHE
+> Task :fabric-rendering-v1:generateModMetadata
+> Task :fabric-rendering-v1:processResources
+> Task :fabric-rendering-v1:classes
+> Task :fabric-rendering-v1:jarJar NO-SOURCE
+> Task :fabric-rendering-v1:jar
+> Task :fabric-renderer-indigo:sourcesJar
+> Task :fabric-rendering-fluids-v1:sourcesJar
+> Task :fabric-rendering-fluids-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-rendering-fluids-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-rendering-fluids-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-rendering-fluids-v1:publishToMavenLocal
+> Task :fabric-rendering-v1:sourcesJar
+> Task :fabric-rendering-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-rendering-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-rendering-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-rendering-v1:publishToMavenLocal
+> Task :fabric-resource-conditions-api-v1:sourcesJar
+> Task :fabric-resource-conditions-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-resource-conditions-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-resource-conditions-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-resource-conditions-api-v1:publishToMavenLocal
+> Task :fabric-resource-loader-v1:sourcesJar
+> Task :fabric-resource-loader-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-resource-loader-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-resource-loader-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-resource-loader-v1:publishToMavenLocal
+> Task :fabric-screen-api-v1:sourcesJar
+> Task :fabric-screen-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-screen-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-screen-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-screen-api-v1:publishToMavenLocal
+> Task :fabric-serialization-api-v1:sourcesJar
+> Task :fabric-serialization-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-serialization-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-serialization-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-serialization-api-v1:publishToMavenLocal
+> Task :fabric-sound-api-v1:sourcesJar
+> Task :fabric-sound-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-sound-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-sound-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-sound-api-v1:publishToMavenLocal
+> Task :fabric-tag-api-v1:sourcesJar
+> Task :fabric-tag-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-tag-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-tag-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-tag-api-v1:publishToMavenLocal
+> Task :fabric-transfer-api-v1:sourcesJar
+> Task :fabric-transfer-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-transfer-api-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-transfer-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-transfer-api-v1:publishToMavenLocal
+> Task :fabric-transitive-access-wideners-v1:sourcesJar
+> Task :fabric-transitive-access-wideners-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-transitive-access-wideners-v1:generatePomFileForMavenJavaPublication
+> Task :fabric-transitive-access-wideners-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-transitive-access-wideners-v1:publishToMavenLocal
+> Task :internal:publishToMavenLocal UP-TO-DATE
+> Task :deprecated:fabric-resource-loader-v0:sourcesJar
+> Task :deprecated:fabric-resource-loader-v0:generateMetadataFileForMavenJavaPublication
+> Task :deprecated:fabric-resource-loader-v0:generatePomFileForMavenJavaPublication
+> Task :deprecated:fabric-resource-loader-v0:publishMavenJavaPublicationToMavenLocal
+> Task :deprecated:fabric-resource-loader-v0:publishToMavenLocal
+> Task :internal:ffapi-fluid-types:sourcesJar
+> Task :internal:ffapi-fluid-types:generateMetadataFileForMavenJavaPublication
+> Task :internal:ffapi-fluid-types:generatePomFileForMavenJavaPublication
+> Task :internal:ffapi-fluid-types:publishMavenJavaPublicationToMavenLocal
+> Task :internal:ffapi-fluid-types:publishToMavenLocal
+> Task :fabric-renderer-api-v1:compileJava FROM-CACHE
+> Task :fabric-renderer-api-v1:classes
+> Task :fabric-renderer-api-v1:jar
+> Task :fabric-renderer-indigo:generatePomFileForMavenJavaPublication
+> Task :fabric-renderer-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-renderer-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-renderer-api-v1:publishToMavenLocal
+> Task :fabric-model-loading-api-v1:compileJava FROM-CACHE
+> Task :fabric-model-loading-api-v1:classes
+> Task :fabric-model-loading-api-v1:jar
+> Task :fabric-model-loading-api-v1:generateMetadataFileForMavenJavaPublication
+> Task :fabric-model-loading-api-v1:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-model-loading-api-v1:publishToMavenLocal
+> Task :fabric-renderer-indigo:compileJava FROM-CACHE
+> Task :fabric-renderer-indigo:classes
+> Task :compileJava NO-SOURCE
+> Task :classes
+> Task :fabric-renderer-indigo:jar
+> Task :fabric-api-bom:generatePomFileForMavenJavaPublication
+> Task :fabric-api-bom:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-api-bom:publishToMavenLocal
+> Task :fabric-renderer-indigo:generateMetadataFileForMavenJavaPublication
+> Task :fabric-renderer-indigo:publishMavenJavaPublicationToMavenLocal
+> Task :fabric-renderer-indigo:publishToMavenLocal
+> Task :jarJar
+> Task :jar
+> Task :generateMetadataFileForMavenJavaPublication
+> Task :publishMavenJavaPublicationToMavenLocal
+> Task :publishToMavenLocal
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/ffapi-1793977029350.json
+
+[Incubating] Problems report is available at: file:///home/runner/work/Connector/Connector/ffapi/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.6.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 2m 56s
+690 actionable tasks: 642 executed, 48 from cache

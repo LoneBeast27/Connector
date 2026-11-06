@@ -1,0 +1,151 @@
+
+> Configure project :
+Project version: 3.2.0-beta.1+26.3+dev-g602d473
+Java: 25.0.3, JVM: 25.0.3+9-LTS (Microsoft), Arch: amd64
+Creating Minecraft artifacts without recompilation.
+
+> Task :transformer:compileJava FROM-CACHE
+> Task :transformer:processResources
+> Task :transformer:classes
+> Task :transformer:jar
+> Task :transformer:compileRunnerJava FROM-CACHE
+> Task :transformer:processRunnerResources
+> Task :transformer:runnerClasses
+
+> Task :createMinecraftArtifacts
+Loaded 135 artifacts from /home/runner/work/Connector/Connector/connector/build/tmp/createMinecraftArtifacts/nfrt_artifact_manifest.properties
+[1m*** Started working on [4mdownloadManifest[23;0m[23;0m
+  ↓ https://piston-meta.mojang.com/mc/game/version_manifest_v2.json
+ [1m[92m✓[23;0m Completed [4mdownloadManifest[23;0m in 0.74s
+[1m*** Started working on [4mdownloadJson[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadJson[23;0m in 0.00s
+[1m*** Started working on [4mdownloadServer[23;0m[23;0m
+[1m*** Started working on [4mdownloadClient[23;0m[23;0m
+ [1m[92m✓[23;0m Completed [4mdownloadClient[23;0m in 0.10s
+ [1m[92m✓[23;0m Completed [4mdownloadServer[23;0m in 0.10s
+[1m*** Started working on [4mpreProcessJar[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mpreProcessJar[23;0m in 0.00s
+[1m*** Started working on [4mbinaryPatch[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mbinaryPatch[23;0m in 0.00s
+[1m*** Started working on [4mcopyUnpatchedClasses[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mcopyUnpatchedClasses[23;0m in 0.00s
+[1m*** Started working on [4mapplyDevTransforms[23;0m[23;0m
+ [1m[92m♻[23;0m Used cache of [4mapplyDevTransforms[23;0m in 0.01s
+Total runtime: 2.14s
+
+
+> Task :transformer:shadowJar
+'META-INF/services/org.sinytra.connector.transformer.api.TransformerPlugin' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.spongepowered.asm.service.IGlobalPropertyService' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.spongepowered.asm.service.IMixinService' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/net.neoforged.neoforgespi.language.IModLanguageLoader' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/net.neoforged.neoforgespi.locating.IDependencyLocator' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/net.neoforged.neoforgespi.locating.IModFileReader' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.slf4j.spi.SLF4JServiceProvider' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/javax.annotation.processing.Processor' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.apache.logging.log4j.core.util.ContextDataProvider' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.apache.logging.log4j.message.ThreadDumpMessage$ThreadInfoFactory' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.apache.logging.log4j.spi.Provider' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/net.neoforged.neoforgespi.transformation.ClassProcessorProvider' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/cpw.mods.modlauncher.api.ITransformationService' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/cpw.mods.modlauncher.serviceapi.ILaunchPluginService' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.spongepowered.asm.service.IMixinServiceBootstrap' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.spongepowered.tools.obfuscation.service.IObfuscationService' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+'META-INF/services/org.apache.logging.log4j.util.PropertySource' is matched by com.github.jengelman.gradle.plugins.shadow.transformers.ServiceFileTransformer but its DuplicatesStrategy is EXCLUDE — duplicates may be silently dropped before the transformer processes them.
+Set it to INCLUDE or WARN to ensure all duplicates are processed by the transformer.
+See https://gradleup.com/shadow/configuration/merging/#handling-duplicates-strategy for more details.
+
+> Task :depsJar
+> Task :transformer:sourcesJar
+> Task :transformer:assemble
+> Task :transformer:check
+> Task :transformer:build
+> Task :transformer:generateMetadataFileForMavenJavaPublication
+> Task :transformer:generatePomFileForMavenJavaPublication
+> Task :transformer:publishMavenJavaPublicationToMavenLocal
+> Task :transformer:generateMetadataFileForShadowPublication
+> Task :transformer:generatePomFileForShadowPublication
+
+> Task :transformer:publishShadowPublicationToMavenLocal
+Multiple publications with coordinates 'org.sinytra.connector:transformer:3.2.0-beta.1+26.3+dev-g602d473' are published to repository 'mavenLocal'. The publications 'mavenJava' in project ':transformer' and 'shadow' in project ':transformer' will overwrite each other!
+
+> Task :transformer:publishToMavenLocal
+
+> Task :compileJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :processResources
+> Task :classes
+
+> Task :compileModJava
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+
+> Task :processModResources
+> Task :modClasses
+> Task :modJarJar NO-SOURCE
+> Task :modJar
+> Task :jarJar
+> Task :jar
+> Task :fullHar
+> Task :sourcesJar
+> Task :assemble
+> Task :check
+> Task :build
+> Task :generateMetadataFileForMavenJavaPublication
+> Task :generatePomFileForMavenJavaPublication
+> Task :publishMavenJavaPublicationToMavenLocal
+> Task :publishToMavenLocal
+gradle/actions: Writing build results to /home/runner/work/_temp/.gradle-actions/build-results/connector-1793977216867.json
+
+================================================================================
+ PUBLISHED MAVEN PUBLICATIONS
+================================================================================
+
+	org.sinytra:connector:3.2.0-beta.1+26.3+dev-g602d473
+
+
+[Incubating] Problems report is available at: file:///home/runner/work/Connector/Connector/connector/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.8.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 12s
+27 actionable tasks: 25 executed, 2 from cache
+Consider enabling configuration cache to speed up this build: https://docs.gradle.org/9.8.0/userguide/configuration_cache_enabling.html

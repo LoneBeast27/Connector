@@ -1,0 +1,6 @@
+target jars: 73, target classes: 39330, mod classes: 2721, mixin configs: 63
+  net/minecraft/server/MinecraftServer <- /home/runner/work/Connector/Connector/connector/build/moddev/artifacts/minecraft-patched-26.3.0.100.jar
+  net/minecraft/client/Minecraft <- /home/runner/work/Connector/Connector/connector/build/moddev/artifacts/minecraft-patched-26.3.0.100.jar
+  net/minecraft/world/entity/Entity <- /home/runner/work/Connector/Connector/connector/build/moddev/artifacts/minecraft-patched-26.3.0.100.jar
+mixins: 468, injectors: 580, @At targets checked: 286, ISSUES: 0
+

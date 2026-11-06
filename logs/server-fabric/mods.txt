@@ -1,0 +1,8 @@
+appleskin.jar
+cloth-config.jar
+connector-3.2.0-beta.1+26.3+dev-g602d473-full.jar
+fabric-language-kotlin.jar
+ferrite-core.jar
+forgified-fabric-api-0.165.2+26.3+4.0.2.jar
+jade.jar
+launchpad-1.10.2+26.3-full.jar
