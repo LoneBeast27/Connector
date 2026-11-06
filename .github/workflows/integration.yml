@@ -72,6 +72,9 @@ jobs:
         id: launchpad
         working-directory: launchpad
         shell: bash
+        env:
+          # Publish under the plain version (no +dev-<hash>) so Connector's pinned launchpad version resolves.
+          PUBLISH_RELEASE_TYPE: BETA
         run: |
           set -o pipefail
           ./gradlew publishToMavenLocal --stacktrace -x test 2>&1 | tee "$REPORT/logs/launchpad-build.log"
