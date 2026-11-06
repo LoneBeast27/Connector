@@ -1,0 +1,154 @@
+name: Integration (FFAPI + Launchpad + Connector + server smoke test)
+
+# Fork-only pipeline for the 26.3 port. Builds the three projects from the LoneBeast27 forks,
+# boots a NeoForge dedicated server with Connector and a set of Fabric mods, and publishes
+# logs + jars to the ci/<branch> git branch so results can be read with a plain `git fetch`.
+
+on:
+  push:
+    branches: [ '26.3.x' ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  BRANCH: 26.3.x
+  MC_VERSION: '26.3'
+  NEOFORGE_VERSION: 26.3.0.100
+  # Fabric mods (Modrinth project slugs) loaded on the smoke-test server. Server-safe picks only.
+  SMOKE_MODS: 'cloth-config fabric-language-kotlin appleskin jade ferrite-core lithium'
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout Connector
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+          path: connector
+
+      - name: Checkout Forgified Fabric API
+        uses: actions/checkout@v4
+        with:
+          repository: LoneBeast27/ForgifiedFabricAPI
+          ref: ${{ env.BRANCH }}
+          fetch-depth: 0
+          path: ffapi
+
+      - name: Checkout Launchpad
+        uses: actions/checkout@v4
+        with:
+          repository: LoneBeast27/Launchpad
+          ref: ${{ env.BRANCH }}
+          fetch-depth: 0
+          path: launchpad
+
+      - name: Setup JDK 25
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'microsoft'
+          java-version: '25'
+
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Prepare report dir
+        run: mkdir -p "$RUNNER_TEMP/report/logs" "$RUNNER_TEMP/report/jars" && echo "REPORT=$RUNNER_TEMP/report" >> $GITHUB_ENV
+
+      - name: Build FFAPI
+        id: ffapi
+        working-directory: ffapi
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p ~/.gradle/caches/fabric-loom/assets
+          ./gradlew publishToMavenLocal --stacktrace --continue -x test 2>&1 | tee "$REPORT/logs/ffapi-build.log"
+
+      - name: Build Launchpad
+        id: launchpad
+        working-directory: launchpad
+        shell: bash
+        run: |
+          set -o pipefail
+          ./gradlew publishToMavenLocal --stacktrace -x test 2>&1 | tee "$REPORT/logs/launchpad-build.log"
+
+      - name: Build Connector
+        id: connector
+        working-directory: connector
+        shell: bash
+        run: |
+          set -o pipefail
+          ./gradlew build publishToMavenLocal --stacktrace -x test 2>&1 | tee "$REPORT/logs/connector-build.log"
+
+      - name: Collect jars
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          # FFAPI: root merged jar. Launchpad/Connector: the "-full" jars (their primary artifacts).
+          find ffapi/build/libs -maxdepth 1 -name 'forgified-fabric-api-*.jar' ! -name '*-sources.jar' ! -name '*-javadoc.jar' -exec cp {} "$REPORT/jars/" \; 2>/dev/null || true
+          find launchpad/build/libs -maxdepth 1 -name '*-full.jar' -exec cp {} "$REPORT/jars/" \; 2>/dev/null || true
+          find connector/build/libs -maxdepth 1 -name '*-full.jar' -exec cp {} "$REPORT/jars/" \; 2>/dev/null || true
+          ls -la "$REPORT/jars"
+          echo "JAR_COUNT=$(ls "$REPORT"/jars/*.jar 2>/dev/null | wc -l)" >> $GITHUB_ENV
+
+      - name: Install NeoForge server
+        if: ${{ always() && env.JAR_COUNT == '3' }}
+        shell: bash
+        run: |
+          mkdir -p server && cd server
+          curl -fsSL -o installer.jar "https://maven.neoforged.net/releases/net/neoforged/neoforge/${NEOFORGE_VERSION}/neoforge-${NEOFORGE_VERSION}-installer.jar"
+          java -jar installer.jar --install-server . > "$REPORT/logs/neoforge-install.log" 2>&1
+          echo "eula=true" > eula.txt
+          printf 'online-mode=false\nlevel-type=minecraft\\:flat\nspawn-protection=0\nview-distance=4\nsimulation-distance=4\n' > server.properties
+
+      - name: Smoke test - Connector only
+        if: ${{ always() && env.JAR_COUNT == '3' }}
+        shell: bash
+        run: |
+          cd server && rm -rf mods world logs crash-reports && mkdir mods
+          cp "$REPORT"/jars/*.jar mods/
+          bash "$GITHUB_WORKSPACE/connector/.github/scripts/run-server.sh" "$REPORT/logs/server-baseline" || true
+
+      - name: Download Fabric smoke-test mods
+        if: ${{ always() && env.JAR_COUNT == '3' }}
+        shell: bash
+        run: |
+          mkdir -p fabric-mods
+          for slug in $SMOKE_MODS; do
+            url=$(curl -fsSL "https://api.modrinth.com/v2/project/$slug/version?loaders=%5B%22fabric%22%5D&game_versions=%5B%22${MC_VERSION}%22%5D" \
+              | python3 -c 'import json,sys; v=json.load(sys.stdin); print(v[0]["files"][0]["url"] if v else "")')
+            if [ -n "$url" ]; then curl -fsSL -o "fabric-mods/$slug.jar" "$url" && echo "$slug: $url" >> "$REPORT/logs/fabric-mods.txt";
+            else echo "$slug: no fabric build for $MC_VERSION" >> "$REPORT/logs/fabric-mods.txt"; fi
+          done
+          cat "$REPORT/logs/fabric-mods.txt"
+
+      - name: Smoke test - with Fabric mods
+        if: ${{ always() && env.JAR_COUNT == '3' }}
+        shell: bash
+        run: |
+          cd server && rm -rf mods world logs crash-reports && mkdir mods
+          cp "$REPORT"/jars/*.jar mods/ && cp ../fabric-mods/*.jar mods/ 2>/dev/null || true
+          bash "$GITHUB_WORKSPACE/connector/.github/scripts/run-server.sh" "$REPORT/logs/server-fabric" || true
+
+      - name: Publish CI report branch
+        if: ${{ always() }}
+        shell: bash
+        run: |
+          cd "$REPORT"
+          for f in logs/*-build.log; do [ -f "$f" ] && grep -nE '^e: |error:|FAILED|BUILD (SUCCESSFUL|FAILED)|What went wrong|Could not' "$f" | head -300 > "${f%.log}.errors.txt"; done
+          cat > STATUS <<EOT
+          commit=${GITHUB_SHA}
+          run=${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}
+          ffapi=${{ steps.ffapi.outcome }}
+          launchpad=${{ steps.launchpad.outcome }}
+          connector=${{ steps.connector.outcome }}
+          server_baseline=$(cat logs/server-baseline/RESULT 2>/dev/null || echo not-run)
+          server_fabric=$(cat logs/server-fabric/RESULT 2>/dev/null || echo not-run)
+          EOT
+          git init -q -b report && git add -A
+          git -c user.name=ci -c user.email=ci@localhost commit -q -m "CI ${GITHUB_SHA::9}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git" "report:refs/heads/ci/${GITHUB_REF_NAME}"
