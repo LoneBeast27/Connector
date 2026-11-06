@@ -1,0 +1,18 @@
+diff --git a/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/mixin/item/DataComponentMapBuilderMixin.java b/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/mixin/item/DataComponentMapBuilderMixin.java
+index fcd1112..6e06a38 100644
+--- a/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/mixin/item/DataComponentMapBuilderMixin.java
++++ b/fabric-item-api-v1/src/main/java/net/fabricmc/fabric/mixin/item/DataComponentMapBuilderMixin.java
+@@ -42,11 +42,8 @@ abstract class DataComponentMapBuilderMixin implements FabricComponentMapBuilder
+ 	@Shadow
+ 	public abstract <T> DataComponentMap.Builder set(DataComponentType<T> dataComponentType, @Nullable T object);
+ 
+-	@SuppressWarnings("unchecked")
+-	@Override
+-	public @Nullable <T> T get(DataComponentType<T> type) {
+-		return (T) this.map.get(type);
+-	}
++	// FFAPI: NeoForge 26.3 patches an identical get(DataComponentType) into DataComponentMap.Builder,
++	// which satisfies FabricComponentMapBuilder#get; declaring it here would clash (requires @Overwrite).
+ 
+ 	@Override
+ 	@SuppressWarnings("unchecked")
